@@ -10,10 +10,10 @@
       0.6096569663469354,
       0.9999999999999999
     ],
-    "cost_per_solved": 0.29563666666666666,
-    "median_wall_s": 18.2,
+    "cost_per_solved": 0.30005433333333337,
+    "median_wall_s": 17.9,
     "enough_data": true,
-    "run_id": "20260926-095147",
+    "run_id": "20260926-131025",
     "date": "26.09.2026",
     "quality_floor": 0.8,
     "currency": "EUR"
@@ -29,10 +29,10 @@
       0.6096569663469354,
       0.9999999999999999
     ],
-    "cost_per_solved": 0.16155083333333334,
-    "median_wall_s": 13.4,
+    "cost_per_solved": 0.153364,
+    "median_wall_s": 10.9,
     "enough_data": true,
-    "run_id": "20260926-095147",
+    "run_id": "20260926-131025",
     "date": "26.09.2026",
     "quality_floor": 0.8,
     "currency": "EUR"
@@ -48,17 +48,74 @@
       0.6096569663469354,
       0.9999999999999999
     ],
-    "cost_per_solved": 0.0497565,
-    "median_wall_s": 54.3,
+    "cost_per_solved": 0.04070766666666666,
+    "median_wall_s": 48.7,
     "enough_data": true,
-    "run_id": "20260925-221116",
-    "date": "25.09.2026",
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
     "quality_floor": 0.8,
     "currency": "EUR"
   },
   "cx-gpt6sol-medium": {
     "harness": "codex",
     "model": "gpt-6-sol",
+    "effort": "medium",
+    "n": 5,
+    "passed": 5,
+    "pass_rate": 1.0,
+    "ci": [
+      0.5655085052479191,
+      1.0
+    ],
+    "cost_per_solved": 0.0441738,
+    "median_wall_s": 42.3,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cc-fable51-high": {
+    "harness": "claude",
+    "model": "claude-fable-5-1",
+    "effort": "high",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.8365488333333334,
+    "median_wall_s": 39.2,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cc-fable51-low": {
+    "harness": "claude",
+    "model": "claude-fable-5-1",
+    "effort": "low",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.7699199999999999,
+    "median_wall_s": 25.7,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cc-fable51-medium": {
+    "harness": "claude",
+    "model": "claude-fable-5-1",
     "effort": "medium",
     "n": 6,
     "passed": 6,
@@ -67,11 +124,277 @@
       0.6096569663469354,
       0.9999999999999999
     ],
-    "cost_per_solved": 0.0420125,
-    "median_wall_s": 46.9,
+    "cost_per_solved": 0.793176,
+    "median_wall_s": 32.5,
     "enough_data": true,
-    "run_id": "20260925-221116",
-    "date": "25.09.2026",
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cc-haiku45-high": {
+    "harness": "claude",
+    "model": "claude-haiku-4-5",
+    "effort": "high",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.14406616666666666,
+    "median_wall_s": 76.1,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cc-haiku45-low": {
+    "harness": "claude",
+    "model": "claude-haiku-4-5",
+    "effort": "low",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.19006133333333333,
+    "median_wall_s": 84.8,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cc-haiku45-medium": {
+    "harness": "claude",
+    "model": "claude-haiku-4-5",
+    "effort": "medium",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.19855716666666667,
+    "median_wall_s": 87.8,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cc-opus55-high": {
+    "harness": "claude",
+    "model": "claude-opus-5-5",
+    "effort": "high",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.31424033333333334,
+    "median_wall_s": 28.3,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cc-opus55-low": {
+    "harness": "claude",
+    "model": "claude-opus-5-5",
+    "effort": "low",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.2840885,
+    "median_wall_s": 13.3,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cc-sonnet5-high": {
+    "harness": "claude",
+    "model": "claude-sonnet-5",
+    "effort": "high",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.17060299999999998,
+    "median_wall_s": 16.7,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cc-sonnet5-low": {
+    "harness": "claude",
+    "model": "claude-sonnet-5",
+    "effort": "low",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.15549933333333332,
+    "median_wall_s": 9.2,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cx-gpt6astra-high": {
+    "harness": "codex",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.24672916666666667,
+    "median_wall_s": 51.5,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cx-gpt6astra-low": {
+    "harness": "codex",
+    "model": "gpt-6-astra",
+    "effort": "low",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.20438416666666667,
+    "median_wall_s": 46.3,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cx-gpt6astra-medium": {
+    "harness": "codex",
+    "model": "gpt-6-astra",
+    "effort": "medium",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.21281233333333335,
+    "median_wall_s": 47.0,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cx-gpt6luna-high": {
+    "harness": "codex",
+    "model": "gpt-6-luna",
+    "effort": "high",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.002469833333333333,
+    "median_wall_s": 52.4,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cx-gpt6luna-low": {
+    "harness": "codex",
+    "model": "gpt-6-luna",
+    "effort": "low",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.0022175000000000003,
+    "median_wall_s": 24.7,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cx-gpt6luna-medium": {
+    "harness": "codex",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.002231666666666667,
+    "median_wall_s": 34.2,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cx-gpt6sol-low": {
+    "harness": "codex",
+    "model": "gpt-6-sol",
+    "effort": "low",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.04578066666666667,
+    "median_wall_s": 42.8,
+    "enough_data": true,
+    "run_id": "20260926-131025",
+    "date": "26.09.2026",
     "quality_floor": 0.8,
     "currency": "EUR"
   }

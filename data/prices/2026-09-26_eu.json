@@ -3,7 +3,7 @@
   "currency": "EUR",
   "fx_usd_to_local": 0.8769622029290537,
   "fx_source": "EZB 2026-09-25",
-  "fetched_at": "2026-09-26T11:00:21+00:00",
+  "fetched_at": "2026-09-26T11:10:26+00:00",
   "source": "https://raw.githubusercontent.com/BerriAI/litellm/4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d/model_prices_and_context_window.json",
   "source_commit": "4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d",
   "models": {

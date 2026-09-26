@@ -1,0 +1,4166 @@
+{
+  "run_id": "20260926-131025",
+  "region": "eu",
+  "currency": "EUR",
+  "fx": 0.8769622029290537,
+  "prices_source": "https://raw.githubusercontent.com/BerriAI/litellm/4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d/model_prices_and_context_window.json",
+  "prices_commit": "4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d",
+  "prices_fetched": "2026-09-26T11:10:26+00:00",
+  "quota_mode": "block",
+  "quality_floor": 0.8,
+  "recommendation": "cx-gpt6luna-low",
+  "configs": [
+    {
+      "config": "cc-fable51-low",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.7699199999999999,
+      "cost_per_solved": 0.7699199999999999,
+      "median_tokens": 195600.5,
+      "median_wall_s": 23.95,
+      "week_pct_per_task": 0.16666666666666666,
+      "five_hour_pct_per_task": 0.6666666666666666,
+      "tasks_per_week_at_limit": 600.0,
+      "abo_cost_per_task": 0.06745863099454259,
+      "break_even_tasks_per_week": 52.57062889225577,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cc-fable51-medium",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.793176,
+      "cost_per_solved": 0.793176,
+      "median_tokens": 168002.0,
+      "median_wall_s": 31.75,
+      "week_pct_per_task": 0.16666666666666666,
+      "five_hour_pct_per_task": 0.3333333333333333,
+      "tasks_per_week_at_limit": 600.0,
+      "abo_cost_per_task": 0.06745863099454259,
+      "break_even_tasks_per_week": 51.02925277205255,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cc-fable51-high",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.8365488333333333,
+      "cost_per_solved": 0.8365488333333334,
+      "median_tokens": 168979.5,
+      "median_wall_s": 29.3,
+      "week_pct_per_task": 0.16666666666666666,
+      "five_hour_pct_per_task": 0.5,
+      "tasks_per_week_at_limit": 600.0,
+      "abo_cost_per_task": 0.06745863099454259,
+      "break_even_tasks_per_week": 48.383521659395726,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cc-opus55-low",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.2840885,
+      "cost_per_solved": 0.2840885,
+      "median_tokens": 159921.5,
+      "median_wall_s": 11.4,
+      "week_pct_per_task": 0.16666666666666666,
+      "five_hour_pct_per_task": 0.16666666666666666,
+      "tasks_per_week_at_limit": 600.0,
+      "abo_cost_per_task": 0.06745863099454259,
+      "break_even_tasks_per_week": 142.47383683861034,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cc-opus55-medium",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.3000543333333333,
+      "cost_per_solved": 0.30005433333333337,
+      "median_tokens": 162380.5,
+      "median_wall_s": 16.65,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": 0.3333333333333333,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 134.89283139850968,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cc-opus55-high",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.31424033333333334,
+      "cost_per_solved": 0.31424033333333334,
+      "median_tokens": 162775.5,
+      "median_wall_s": 20.1,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": 0.3333333333333333,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 128.8032575811684,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cc-sonnet5-low",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.15549933333333332,
+      "cost_per_solved": 0.15549933333333332,
+      "median_tokens": 184404.5,
+      "median_wall_s": 9.149999999999999,
+      "week_pct_per_task": 0.16666666666666666,
+      "five_hour_pct_per_task": 0.16666666666666666,
+      "tasks_per_week_at_limit": 600.0,
+      "abo_cost_per_task": 0.06745863099454259,
+      "break_even_tasks_per_week": 260.2916535337272,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cc-sonnet5-medium",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.153364,
+      "cost_per_solved": 0.153364,
+      "median_tokens": 157811.0,
+      "median_wall_s": 8.9,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": 0.16666666666666666,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 263.91577291101925,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cc-sonnet5-high",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.170603,
+      "cost_per_solved": 0.17060299999999998,
+      "median_tokens": 215695.0,
+      "median_wall_s": 12.149999999999999,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": 0.16666666666666666,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 237.2477541234653,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cc-haiku45-low",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.19006133333333333,
+      "cost_per_solved": 0.19006133333333333,
+      "median_tokens": 615987.5,
+      "median_wall_s": 56.95,
+      "week_pct_per_task": 0.16666666666666666,
+      "five_hour_pct_per_task": 0.8333333333333334,
+      "tasks_per_week_at_limit": 600.0,
+      "abo_cost_per_task": 0.06745863099454259,
+      "break_even_tasks_per_week": 212.958511270356,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cc-haiku45-medium",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.19855716666666667,
+      "cost_per_solved": 0.19855716666666667,
+      "median_tokens": 697328.0,
+      "median_wall_s": 59.4,
+      "week_pct_per_task": 0.16666666666666666,
+      "five_hour_pct_per_task": 0.6666666666666666,
+      "tasks_per_week_at_limit": 600.0,
+      "abo_cost_per_task": 0.06745863099454259,
+      "break_even_tasks_per_week": 203.8464754318054,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cc-haiku45-high",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.14406616666666666,
+      "cost_per_solved": 0.14406616666666666,
+      "median_tokens": 572117.0,
+      "median_wall_s": 57.599999999999994,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": 0.3333333333333333,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 280.94853589305995,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cx-gpt6astra-low",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.20438416666666667,
+      "cost_per_solved": 0.20438416666666667,
+      "median_tokens": 87797.0,
+      "median_wall_s": 40.65,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": null,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 198.03480502840102,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cx-gpt6astra-medium",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.21281233333333333,
+      "cost_per_solved": 0.21281233333333335,
+      "median_tokens": 88765.5,
+      "median_wall_s": 46.2,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": null,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 190.19188391364642,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cx-gpt6astra-high",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.24672916666666667,
+      "cost_per_solved": 0.24672916666666667,
+      "median_tokens": 79971.5,
+      "median_wall_s": 50.0,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": null,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 164.04699591681387,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cx-gpt6sol-low",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.04578066666666667,
+      "cost_per_solved": 0.04578066666666667,
+      "median_tokens": 87905.0,
+      "median_wall_s": 42.15,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": null,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 884.1107293484633,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cx-gpt6sol-medium",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "n": 5,
+      "passed": 5,
+      "pass_rate": 1.0,
+      "ci": [
+        0.5655085052479191,
+        1.0
+      ],
+      "mean_cost": 0.0441738,
+      "cost_per_solved": 0.0441738,
+      "median_tokens": 91788,
+      "median_wall_s": 42.3,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": null,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 916.2711516040176,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cx-gpt6sol-high",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.04070766666666666,
+      "cost_per_solved": 0.04070766666666666,
+      "median_tokens": 79719.5,
+      "median_wall_s": 45.25,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": null,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 994.2888382219294,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cx-gpt6luna-low",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.0022175,
+      "cost_per_solved": 0.0022175000000000003,
+      "median_tokens": 85871.5,
+      "median_wall_s": 22.95,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": null,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 18252.617180034074,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cx-gpt6luna-medium",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.0022316666666666665,
+      "cost_per_solved": 0.002231666666666667,
+      "median_tokens": 94494.0,
+      "median_wall_s": 27.25,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": null,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 18136.749184492408,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cx-gpt6luna-high",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.0024698333333333334,
+      "cost_per_solved": 0.002469833333333333,
+      "median_tokens": 104109.0,
+      "median_wall_s": 39.05,
+      "week_pct_per_task": 0.16666666666666666,
+      "five_hour_pct_per_task": null,
+      "tasks_per_week_at_limit": 600.0,
+      "abo_cost_per_task": 0.06745863099454259,
+      "break_even_tasks_per_week": 16387.817773152932,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    }
+  ],
+  "excluded": {
+    "rate_limited": 0,
+    "error": 1
+  },
+  "trials": [
+    {
+      "trial_id": "cc-fable51-high__py-bugfix-workdays__r1",
+      "config": "cc-fable51-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.736859,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 66,
+        "cache_read": 132061,
+        "cache_write_5m": 0,
+        "cache_write_1h": 33259,
+        "output": 1300,
+        "reasoning_output": 0
+      },
+      "wall_s": 19.4,
+      "share": {
+        "five_hour": 0.5,
+        "week": 0.16666666666666666,
+        "week_fable": 0.16666666666666666
+      }
+    },
+    {
+      "trial_id": "cc-fable51-high__py-bugfix-workdays__r2",
+      "config": "cc-fable51-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.740355,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 66,
+        "cache_read": 132076,
+        "cache_write_5m": 0,
+        "cache_write_1h": 33280,
+        "output": 1364,
+        "reasoning_output": 0
+      },
+      "wall_s": 19.4,
+      "share": {
+        "five_hour": 0.5,
+        "week": 0.16666666666666666,
+        "week_fable": 0.16666666666666666
+      }
+    },
+    {
+      "trial_id": "cc-fable51-high__py-bugfix-workdays__r3",
+      "config": "cc-fable51-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.73326,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 66,
+        "cache_read": 129616,
+        "cache_write_5m": 0,
+        "cache_write_1h": 33158,
+        "output": 1278,
+        "reasoning_output": 0
+      },
+      "wall_s": 18.1,
+      "share": {
+        "five_hour": 0.5,
+        "week": 0.16666666666666666,
+        "week_fable": 0.16666666666666666
+      }
+    },
+    {
+      "trial_id": "cc-fable51-high__py-feature-slugify__r1",
+      "config": "cc-fable51-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.883391,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 98,
+        "cache_read": 191742,
+        "cache_write_5m": 0,
+        "cache_write_1h": 35267,
+        "output": 3230,
+        "reasoning_output": 0
+      },
+      "wall_s": 39.2,
+      "share": {
+        "five_hour": 0.5,
+        "week": 0.16666666666666666,
+        "week_fable": 0.16666666666666666
+      }
+    },
+    {
+      "trial_id": "cc-fable51-high__py-feature-slugify__r2",
+      "config": "cc-fable51-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.890594,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 66,
+        "cache_read": 131970,
+        "cache_write_5m": 0,
+        "cache_write_1h": 35576,
+        "output": 3561,
+        "reasoning_output": 0
+      },
+      "wall_s": 44.0,
+      "share": {
+        "five_hour": 0.5,
+        "week": 0.16666666666666666,
+        "week_fable": 0.16666666666666666
+      }
+    },
+    {
+      "trial_id": "cc-fable51-high__py-feature-slugify__r3",
+      "config": "cc-fable51-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 1.034834,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 130,
+        "cache_read": 246584,
+        "cache_write_5m": 0,
+        "cache_write_1h": 38170,
+        "output": 4928,
+        "reasoning_output": 0
+      },
+      "wall_s": 60.6,
+      "share": {
+        "five_hour": 0.5,
+        "week": 0.16666666666666666,
+        "week_fable": 0.16666666666666666
+      }
+    },
+    {
+      "trial_id": "cc-fable51-low__py-bugfix-workdays__r1",
+      "config": "cc-fable51-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.721861,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 66,
+        "cache_read": 132029,
+        "cache_write_5m": 0,
+        "cache_write_1h": 32987,
+        "output": 1098,
+        "reasoning_output": 0
+      },
+      "wall_s": 16.6,
+      "share": {
+        "five_hour": 0.6666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-fable51-low__py-bugfix-workdays__r2",
+      "config": "cc-fable51-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.727123,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 66,
+        "cache_read": 131729,
+        "cache_write_5m": 0,
+        "cache_write_1h": 33016,
+        "output": 1197,
+        "reasoning_output": 0
+      },
+      "wall_s": 17.9,
+      "share": {
+        "five_hour": 0.6666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-fable51-low__py-bugfix-workdays__r3",
+      "config": "cc-fable51-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.712326,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 66,
+        "cache_read": 132650,
+        "cache_write_5m": 0,
+        "cache_write_1h": 32750,
+        "output": 992,
+        "reasoning_output": 0
+      },
+      "wall_s": 22.2,
+      "share": {
+        "five_hour": 0.6666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-fable51-low__py-feature-slugify__r1",
+      "config": "cc-fable51-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.844899,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 98,
+        "cache_read": 190613,
+        "cache_write_5m": 0,
+        "cache_write_1h": 34611,
+        "output": 2700,
+        "reasoning_output": 0
+      },
+      "wall_s": 35.8,
+      "share": {
+        "five_hour": 0.6666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-fable51-low__py-feature-slugify__r2",
+      "config": "cc-fable51-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.819283,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 98,
+        "cache_read": 191512,
+        "cache_write_5m": 0,
+        "cache_write_1h": 34382,
+        "output": 2256,
+        "reasoning_output": 0
+      },
+      "wall_s": 30.3,
+      "share": {
+        "five_hour": 0.6666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-fable51-low__py-feature-slugify__r3",
+      "config": "cc-fable51-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.794028,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 98,
+        "cache_read": 188752,
+        "cache_write_5m": 0,
+        "cache_write_1h": 33990,
+        "output": 1903,
+        "reasoning_output": 0
+      },
+      "wall_s": 25.7,
+      "share": {
+        "five_hour": 0.6666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-fable51-medium__py-bugfix-workdays__r1",
+      "config": "cc-fable51-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.720995,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 66,
+        "cache_read": 130279,
+        "cache_write_5m": 0,
+        "cache_write_1h": 32964,
+        "output": 1098,
+        "reasoning_output": 0
+      },
+      "wall_s": 17.6,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-fable51-medium__py-bugfix-workdays__r2",
+      "config": "cc-fable51-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.728944,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 66,
+        "cache_read": 132078,
+        "cache_write_5m": 0,
+        "cache_write_1h": 33101,
+        "output": 1199,
+        "reasoning_output": 0
+      },
+      "wall_s": 18.3,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-fable51-medium__py-bugfix-workdays__r3",
+      "config": "cc-fable51-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.728062,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 66,
+        "cache_read": 131903,
+        "cache_write_5m": 0,
+        "cache_write_1h": 33075,
+        "output": 1192,
+        "reasoning_output": 0
+      },
+      "wall_s": 32.5,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-fable51-medium__py-feature-slugify__r1",
+      "config": "cc-fable51-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.83482,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 98,
+        "cache_read": 191137,
+        "cache_write_5m": 0,
+        "cache_write_1h": 34697,
+        "output": 2454,
+        "reasoning_output": 0
+      },
+      "wall_s": 31.0,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-fable51-medium__py-feature-slugify__r2",
+      "config": "cc-fable51-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.91217,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 98,
+        "cache_read": 192476,
+        "cache_write_5m": 0,
+        "cache_write_1h": 35777,
+        "output": 3619,
+        "reasoning_output": 0
+      },
+      "wall_s": 45.8,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-fable51-medium__py-feature-slugify__r3",
+      "config": "cc-fable51-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-fable-5-1",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.834065,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 66,
+        "cache_read": 131929,
+        "cache_write_5m": 0,
+        "cache_write_1h": 34909,
+        "output": 2656,
+        "reasoning_output": 0
+      },
+      "wall_s": 41.0,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-high__py-bugfix-workdays__r1",
+      "config": "cc-haiku45-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.087458,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 73,
+        "cache_read": 370429,
+        "cache_write_5m": 0,
+        "cache_write_1h": 20773,
+        "output": 2400,
+        "reasoning_output": 0
+      },
+      "wall_s": 22.6,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-high__py-bugfix-workdays__r2",
+      "config": "cc-haiku45-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.091872,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 73,
+        "cache_read": 371802,
+        "cache_write_5m": 0,
+        "cache_write_1h": 21185,
+        "output": 3123,
+        "reasoning_output": 0
+      },
+      "wall_s": 33.4,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-high__py-bugfix-workdays__r3",
+      "config": "cc-haiku45-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.105989,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 89,
+        "cache_read": 463441,
+        "cache_write_5m": 0,
+        "cache_write_1h": 22412,
+        "output": 3723,
+        "reasoning_output": 0
+      },
+      "wall_s": 39.1,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-high__py-feature-slugify__r1",
+      "config": "cc-haiku45-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.215716,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 145,
+        "cache_read": 867184,
+        "cache_write_5m": 0,
+        "cache_write_1h": 35023,
+        "output": 13342,
+        "reasoning_output": 0
+      },
+      "wall_s": 109.9,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-high__py-feature-slugify__r2",
+      "config": "cc-haiku45-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.147426,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 113,
+        "cache_read": 620448,
+        "cache_write_5m": 0,
+        "cache_write_1h": 26457,
+        "output": 7551,
+        "reasoning_output": 0
+      },
+      "wall_s": 76.1,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-high__py-feature-slugify__r3",
+      "config": "cc-haiku45-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.215936,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 105,
+        "cache_read": 662575,
+        "cache_write_5m": 0,
+        "cache_write_1h": 35940,
+        "output": 17121,
+        "reasoning_output": 0
+      },
+      "wall_s": 163.5,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-low__py-bugfix-workdays__r1",
+      "config": "cc-haiku45-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.08444,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 65,
+        "cache_read": 326770,
+        "cache_write_5m": 0,
+        "cache_write_1h": 20896,
+        "output": 2600,
+        "reasoning_output": 0
+      },
+      "wall_s": 29.1,
+      "share": {
+        "five_hour": 0.8333333333333334,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-low__py-bugfix-workdays__r2",
+      "config": "cc-haiku45-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.089843,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 73,
+        "cache_read": 370631,
+        "cache_write_5m": 0,
+        "cache_write_1h": 21034,
+        "output": 2786,
+        "reasoning_output": 0
+      },
+      "wall_s": 29.1,
+      "share": {
+        "five_hour": 0.8333333333333334,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-low__py-bugfix-workdays__r3",
+      "config": "cc-haiku45-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.098455,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 89,
+        "cache_read": 460327,
+        "cache_write_5m": 0,
+        "cache_write_1h": 21305,
+        "output": 2666,
+        "reasoning_output": 0
+      },
+      "wall_s": 26.3,
+      "share": {
+        "five_hour": 0.8333333333333334,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-low__py-feature-slugify__r1",
+      "config": "cc-haiku45-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.170465,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 121,
+        "cache_read": 708146,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30277,
+        "output": 9044,
+        "reasoning_output": 0
+      },
+      "wall_s": 84.8,
+      "share": {
+        "five_hour": 0.8333333333333334,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-low__py-feature-slugify__r2",
+      "config": "cc-haiku45-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.423241,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 281,
+        "cache_read": 2001860,
+        "cache_write_5m": 0,
+        "cache_write_1h": 51860,
+        "output": 26912,
+        "reasoning_output": 0
+      },
+      "wall_s": 252.3,
+      "share": {
+        "five_hour": 0.8333333333333334,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-low__py-feature-slugify__r3",
+      "config": "cc-haiku45-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.273924,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 185,
+        "cache_read": 1163250,
+        "cache_write_5m": 0,
+        "cache_write_1h": 38997,
+        "output": 17891,
+        "reasoning_output": 0
+      },
+      "wall_s": 171.6,
+      "share": {
+        "five_hour": 0.8333333333333334,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-medium__py-bugfix-workdays__r1",
+      "config": "cc-haiku45-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.084822,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 65,
+        "cache_read": 325840,
+        "cache_write_5m": 0,
+        "cache_write_1h": 20773,
+        "output": 2747,
+        "reasoning_output": 0
+      },
+      "wall_s": 28.8,
+      "share": {
+        "five_hour": 0.6666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-medium__py-bugfix-workdays__r2",
+      "config": "cc-haiku45-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.078524,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 57,
+        "cache_read": 283365,
+        "cache_write_5m": 0,
+        "cache_write_1h": 20496,
+        "output": 2403,
+        "reasoning_output": 0
+      },
+      "wall_s": 23.0,
+      "share": {
+        "five_hour": 0.6666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-medium__py-bugfix-workdays__r3",
+      "config": "cc-haiku45-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.102307,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 81,
+        "cache_read": 421213,
+        "cache_write_5m": 0,
+        "cache_write_1h": 22339,
+        "output": 3835,
+        "reasoning_output": 0
+      },
+      "wall_s": 31.0,
+      "share": {
+        "five_hour": 0.6666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-medium__py-feature-slugify__r1",
+      "config": "cc-haiku45-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.313855,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 225,
+        "cache_read": 1520136,
+        "cache_write_5m": 0,
+        "cache_write_1h": 42015,
+        "output": 17817,
+        "reasoning_output": 0
+      },
+      "wall_s": 147.8,
+      "share": {
+        "five_hour": 0.6666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-medium__py-feature-slugify__r2",
+      "config": "cc-haiku45-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.411972,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 281,
+        "cache_read": 2058433,
+        "cache_write_5m": 0,
+        "cache_write_1h": 48620,
+        "output": 24740,
+        "reasoning_output": 0
+      },
+      "wall_s": 199.9,
+      "share": {
+        "five_hour": 0.6666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-haiku45-medium__py-feature-slugify__r3",
+      "config": "cc-haiku45-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-haiku-4-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.199863,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 153,
+        "cache_read": 904928,
+        "cache_write_5m": 0,
+        "cache_write_1h": 31332,
+        "output": 10775,
+        "reasoning_output": 0
+      },
+      "wall_s": 87.8,
+      "share": {
+        "five_hour": 0.6666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-high__py-bugfix-workdays__r1",
+      "config": "cc-opus55-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.285519,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 128275,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30980,
+        "output": 1123,
+        "reasoning_output": 0
+      },
+      "wall_s": 11.9,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-high__py-bugfix-workdays__r2",
+      "config": "cc-opus55-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.287478,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 128449,
+        "cache_write_5m": 0,
+        "cache_write_1h": 31242,
+        "output": 1118,
+        "reasoning_output": 0
+      },
+      "wall_s": 11.2,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-high__py-bugfix-workdays__r3",
+      "config": "cc-opus55-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.284894,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 128417,
+        "cache_write_5m": 0,
+        "cache_write_1h": 31138,
+        "output": 1026,
+        "reasoning_output": 0
+      },
+      "wall_s": 10.7,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-high__py-feature-slugify__r1",
+      "config": "cc-opus55-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.348924,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8,
+        "cache_read": 186418,
+        "cache_write_5m": 0,
+        "cache_write_1h": 33309,
+        "output": 2896,
+        "reasoning_output": 0
+      },
+      "wall_s": 28.3,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-high__py-feature-slugify__r2",
+      "config": "cc-opus55-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.339946,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 128362,
+        "cache_write_5m": 0,
+        "cache_write_1h": 33388,
+        "output": 2980,
+        "reasoning_output": 0
+      },
+      "wall_s": 28.5,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-high__py-feature-slugify__r3",
+      "config": "cc-opus55-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.338681,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8,
+        "cache_read": 185285,
+        "cache_write_5m": 0,
+        "cache_write_1h": 32935,
+        "output": 2526,
+        "reasoning_output": 0
+      },
+      "wall_s": 28.8,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-low__py-bugfix-workdays__r1",
+      "config": "cc-opus55-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.274935,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 128158,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30549,
+        "output": 748,
+        "reasoning_output": 0
+      },
+      "wall_s": 9.5,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-low__py-bugfix-workdays__r2",
+      "config": "cc-opus55-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.275265,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 128166,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30584,
+        "output": 751,
+        "reasoning_output": 0
+      },
+      "wall_s": 9.1,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-low__py-bugfix-workdays__r3",
+      "config": "cc-opus55-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.268593,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 128087,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30304,
+        "output": 518,
+        "reasoning_output": 0
+      },
+      "wall_s": 7.9,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-low__py-feature-slugify__r1",
+      "config": "cc-opus55-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.288428,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 128113,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30916,
+        "output": 1301,
+        "reasoning_output": 0
+      },
+      "wall_s": 13.3,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-low__py-feature-slugify__r2",
+      "config": "cc-opus55-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.299728,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8,
+        "cache_read": 184623,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30994,
+        "output": 1290,
+        "reasoning_output": 0
+      },
+      "wall_s": 14.3,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-low__py-feature-slugify__r3",
+      "config": "cc-opus55-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.297582,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8,
+        "cache_read": 184542,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30918,
+        "output": 1210,
+        "reasoning_output": 0
+      },
+      "wall_s": 14.0,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-medium__py-bugfix-workdays__r1",
+      "config": "cc-opus55-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.278499,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 127190,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30700,
+        "output": 882,
+        "reasoning_output": 0
+      },
+      "wall_s": 10.3,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-medium__py-bugfix-workdays__r2",
+      "config": "cc-opus55-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.306844,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8,
+        "cache_read": 185769,
+        "cache_write_5m": 0,
+        "cache_write_1h": 31475,
+        "output": 1455,
+        "reasoning_output": 0
+      },
+      "wall_s": 15.4,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-medium__py-bugfix-workdays__r3",
+      "config": "cc-opus55-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.27916,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 128239,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30782,
+        "output": 873,
+        "reasoning_output": 0
+      },
+      "wall_s": 10.0,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-medium__py-feature-slugify__r1",
+      "config": "cc-opus55-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.306173,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 129070,
+        "cache_write_5m": 0,
+        "cache_write_1h": 31724,
+        "output": 1888,
+        "reasoning_output": 0
+      },
+      "wall_s": 17.9,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-medium__py-feature-slugify__r2",
+      "config": "cc-opus55-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.320346,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 129073,
+        "cache_write_5m": 0,
+        "cache_write_1h": 32248,
+        "output": 2413,
+        "reasoning_output": 0
+      },
+      "wall_s": 23.4,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-medium__py-feature-slugify__r3",
+      "config": "cc-opus55-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.309304,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 128240,
+        "cache_write_5m": 0,
+        "cache_write_1h": 31798,
+        "output": 2029,
+        "reasoning_output": 0
+      },
+      "wall_s": 19.5,
+      "share": {
+        "five_hour": 0.3333333333333333,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-high__py-bugfix-workdays__r1",
+      "config": "cc-sonnet5-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.147453,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 126823,
+        "cache_write_5m": 0,
+        "cache_write_1h": 29872,
+        "output": 799,
+        "reasoning_output": 0
+      },
+      "wall_s": 7.6,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-high__py-bugfix-workdays__r2",
+      "config": "cc-sonnet5-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.146947,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 126831,
+        "cache_write_5m": 0,
+        "cache_write_1h": 29828,
+        "output": 764,
+        "reasoning_output": 0
+      },
+      "wall_s": 7.3,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-high__py-bugfix-workdays__r3",
+      "config": "cc-sonnet5-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.145075,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 126999,
+        "cache_write_5m": 0,
+        "cache_write_1h": 29747,
+        "output": 599,
+        "reasoning_output": 0
+      },
+      "wall_s": 6.4,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-high__py-feature-slugify__r1",
+      "config": "cc-sonnet5-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.191252,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 10,
+        "cache_read": 239556,
+        "cache_write_5m": 0,
+        "cache_write_1h": 32152,
+        "output": 2172,
+        "reasoning_output": 0
+      },
+      "wall_s": 18.8,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-high__py-feature-slugify__r2",
+      "config": "cc-sonnet5-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.194078,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 12,
+        "cache_read": 293639,
+        "cache_write_5m": 0,
+        "cache_write_1h": 31089,
+        "output": 1808,
+        "reasoning_output": 0
+      },
+      "wall_s": 16.7,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-high__py-feature-slugify__r3",
+      "config": "cc-sonnet5-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "high",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.198813,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 12,
+        "cache_read": 295545,
+        "cache_write_5m": 0,
+        "cache_write_1h": 31836,
+        "output": 1962,
+        "reasoning_output": 0
+      },
+      "wall_s": 18.5,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-low__py-bugfix-workdays__r1",
+      "config": "cc-sonnet5-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.146448,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 123257,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30275,
+        "output": 605,
+        "reasoning_output": 0
+      },
+      "wall_s": 6.7,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.16666666666666666
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-low__py-bugfix-workdays__r2",
+      "config": "cc-sonnet5-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.153223,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 127070,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30545,
+        "output": 1123,
+        "reasoning_output": 0
+      },
+      "wall_s": 9.2,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.16666666666666666
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-low__py-bugfix-workdays__r3",
+      "config": "cc-sonnet5-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.161614,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8,
+        "cache_read": 178475,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30666,
+        "output": 916,
+        "reasoning_output": 0
+      },
+      "wall_s": 8.1,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.16666666666666666
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-low__py-feature-slugify__r1",
+      "config": "cc-sonnet5-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.141344,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 4,
+        "cache_read": 72889,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30199,
+        "output": 1114,
+        "reasoning_output": 0
+      },
+      "wall_s": 9.1,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.16666666666666666
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-low__py-feature-slugify__r2",
+      "config": "cc-sonnet5-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.170714,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 10,
+        "cache_read": 236352,
+        "cache_write_5m": 0,
+        "cache_write_1h": 29977,
+        "output": 977,
+        "reasoning_output": 0
+      },
+      "wall_s": 10.4,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.16666666666666666
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-low__py-feature-slugify__r3",
+      "config": "cc-sonnet5-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "low",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.159653,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8,
+        "cache_read": 181669,
+        "cache_write_5m": 0,
+        "cache_write_1h": 29933,
+        "output": 942,
+        "reasoning_output": 0
+      },
+      "wall_s": 9.5,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.16666666666666666,
+        "week_fable": 0.16666666666666666
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-medium__py-bugfix-workdays__r1",
+      "config": "cc-sonnet5-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.145223,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 126999,
+        "cache_write_5m": 0,
+        "cache_write_1h": 29758,
+        "output": 610,
+        "reasoning_output": 0
+      },
+      "wall_s": 6.9,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-medium__py-bugfix-workdays__r2",
+      "config": "cc-sonnet5-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.14713,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 126193,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30350,
+        "output": 587,
+        "reasoning_output": 0
+      },
+      "wall_s": 6.3,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-medium__py-bugfix-workdays__r3",
+      "config": "cc-sonnet5-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.144326,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 126837,
+        "cache_write_5m": 0,
+        "cache_write_1h": 29636,
+        "output": 569,
+        "reasoning_output": 0
+      },
+      "wall_s": 6.7,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-medium__py-feature-slugify__r1",
+      "config": "cc-sonnet5-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.155468,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 126870,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30377,
+        "output": 1427,
+        "reasoning_output": 0
+      },
+      "wall_s": 12.7,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-medium__py-feature-slugify__r2",
+      "config": "cc-sonnet5-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.152414,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 126888,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30157,
+        "output": 1198,
+        "reasoning_output": 0
+      },
+      "wall_s": 10.9,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-medium__py-feature-slugify__r3",
+      "config": "cc-sonnet5-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.175623,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 10,
+        "cache_read": 237227,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30368,
+        "output": 1312,
+        "reasoning_output": 0
+      },
+      "wall_s": 13.0,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-high__py-bugfix-workdays__r1",
+      "config": "cx-gpt6astra-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.319533,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 18997,
+        "cache_read": 91520,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 995,
+        "reasoning_output": 36
+      },
+      "wall_s": 43.3,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-high__py-bugfix-workdays__r2",
+      "config": "cx-gpt6astra-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.246036,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 12380,
+        "cache_read": 80000,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1025,
+        "reasoning_output": 164
+      },
+      "wall_s": 42.4,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-high__py-bugfix-workdays__r3",
+      "config": "cx-gpt6astra-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.303611,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 10759,
+        "cache_read": 140544,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1332,
+        "reasoning_output": 52
+      },
+      "wall_s": 59.1,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-high__py-feature-slugify__r1",
+      "config": "cx-gpt6astra-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.21939,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 9906,
+        "cache_read": 55168,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1464,
+        "reasoning_output": 71
+      },
+      "wall_s": 51.5,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-high__py-feature-slugify__r2",
+      "config": "cx-gpt6astra-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.21404,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 9523,
+        "cache_read": 55552,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1422,
+        "reasoning_output": 86
+      },
+      "wall_s": 57.3,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-high__py-feature-slugify__r3",
+      "config": "cx-gpt6astra-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.177765,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5897,
+        "cache_read": 59008,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1326,
+        "reasoning_output": 87
+      },
+      "wall_s": 48.5,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-low__py-bugfix-workdays__r1",
+      "config": "cx-gpt6astra-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.198374,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8416,
+        "cache_read": 82432,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 781,
+        "reasoning_output": 12
+      },
+      "wall_s": 34.3,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-low__py-bugfix-workdays__r2",
+      "config": "cx-gpt6astra-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.229326,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 12442,
+        "cache_read": 78208,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 702,
+        "reasoning_output": 14
+      },
+      "wall_s": 35.0,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-low__py-bugfix-workdays__r3",
+      "config": "cx-gpt6astra-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.244174,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 13495,
+        "cache_read": 78720,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 789,
+        "reasoning_output": 11
+      },
+      "wall_s": 33.7,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-low__py-feature-slugify__r1",
+      "config": "cx-gpt6astra-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.175286,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5835,
+        "cache_read": 59008,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1287,
+        "reasoning_output": 67
+      },
+      "wall_s": 46.3,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-low__py-feature-slugify__r2",
+      "config": "cx-gpt6astra-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.171022,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5758,
+        "cache_read": 59008,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1214,
+        "reasoning_output": 45
+      },
+      "wall_s": 47.6,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-low__py-feature-slugify__r3",
+      "config": "cx-gpt6astra-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.208123,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6456,
+        "cache_read": 76288,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1498,
+        "reasoning_output": 77
+      },
+      "wall_s": 56.6,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-medium__py-bugfix-workdays__r1",
+      "config": "cx-gpt6astra-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.253948,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 9195,
+        "cache_read": 119552,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1035,
+        "reasoning_output": 24
+      },
+      "wall_s": 42.9,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-medium__py-bugfix-workdays__r2",
+      "config": "cx-gpt6astra-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.257855,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 9256,
+        "cache_read": 120192,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1091,
+        "reasoning_output": 15
+      },
+      "wall_s": 44.6,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-medium__py-bugfix-workdays__r3",
+      "config": "cx-gpt6astra-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.233824,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 9057,
+        "cache_read": 101120,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1014,
+        "reasoning_output": 18
+      },
+      "wall_s": 45.4,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-medium__py-feature-slugify__r1",
+      "config": "cx-gpt6astra-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.178516,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5857,
+        "cache_read": 59136,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1347,
+        "reasoning_output": 73
+      },
+      "wall_s": 49.7,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-medium__py-feature-slugify__r2",
+      "config": "cx-gpt6astra-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.17676,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5825,
+        "cache_read": 59136,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1317,
+        "reasoning_output": 45
+      },
+      "wall_s": 49.7,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6astra-medium__py-feature-slugify__r3",
+      "config": "cx-gpt6astra-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.175971,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5856,
+        "cache_read": 59008,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1297,
+        "reasoning_output": 38
+      },
+      "wall_s": 47.0,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-high__py-bugfix-workdays__r1",
+      "config": "cx-gpt6luna-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.00201,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8861,
+        "cache_read": 84480,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 705,
+        "reasoning_output": 141
+      },
+      "wall_s": 22.9,
+      "share": {
+        "week": 0.16666666666666666,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-high__py-bugfix-workdays__r2",
+      "config": "cx-gpt6luna-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.001568,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 7134,
+        "cache_read": 54272,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 738,
+        "reasoning_output": 281
+      },
+      "wall_s": 18.4,
+      "share": {
+        "week": 0.16666666666666666,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-high__py-bugfix-workdays__r3",
+      "config": "cx-gpt6luna-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.002048,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 9034,
+        "cache_read": 84480,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 750,
+        "reasoning_output": 185
+      },
+      "wall_s": 25.7,
+      "share": {
+        "week": 0.16666666666666666,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-high__py-feature-slugify__r1",
+      "config": "cx-gpt6luna-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.003701,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 16376,
+        "cache_read": 130816,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1782,
+        "reasoning_output": 592
+      },
+      "wall_s": 57.6,
+      "share": {
+        "week": 0.16666666666666666,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-high__py-feature-slugify__r2",
+      "config": "cx-gpt6luna-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.002799,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 9434,
+        "cache_read": 102656,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1864,
+        "reasoning_output": 838
+      },
+      "wall_s": 54.5,
+      "share": {
+        "week": 0.16666666666666666,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-high__py-feature-slugify__r3",
+      "config": "cx-gpt6luna-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.002693,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8156,
+        "cache_read": 105728,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1838,
+        "reasoning_output": 744
+      },
+      "wall_s": 52.4,
+      "share": {
+        "week": 0.16666666666666666,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-low__py-bugfix-workdays__r1",
+      "config": "cx-gpt6luna-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.001434,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6913,
+        "cache_read": 54272,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 505,
+        "reasoning_output": 0
+      },
+      "wall_s": 14.8,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-low__py-bugfix-workdays__r2",
+      "config": "cx-gpt6luna-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.002277,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 12685,
+        "cache_read": 80384,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 576,
+        "reasoning_output": 0
+      },
+      "wall_s": 21.2,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-low__py-bugfix-workdays__r3",
+      "config": "cx-gpt6luna-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.001409,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6861,
+        "cache_read": 54272,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 464,
+        "reasoning_output": 0
+      },
+      "wall_s": 14.7,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-low__py-feature-slugify__r1",
+      "config": "cx-gpt6luna-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.002241,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 7337,
+        "cache_read": 102656,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1125,
+        "reasoning_output": 0
+      },
+      "wall_s": 29.4,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-low__py-feature-slugify__r2",
+      "config": "cx-gpt6luna-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.003711,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 21205,
+        "cache_read": 105472,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1344,
+        "reasoning_output": 0
+      },
+      "wall_s": 98.0,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-low__py-feature-slugify__r3",
+      "config": "cx-gpt6luna-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.002233,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 11867,
+        "cache_read": 65280,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 951,
+        "reasoning_output": 0
+      },
+      "wall_s": 24.7,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-medium__py-bugfix-workdays__r1",
+      "config": "cx-gpt6luna-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.001782,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 7865,
+        "cache_read": 69376,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 735,
+        "reasoning_output": 94
+      },
+      "wall_s": 19.6,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-medium__py-bugfix-workdays__r2",
+      "config": "cx-gpt6luna-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.001935,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8559,
+        "cache_read": 84480,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 611,
+        "reasoning_output": 0
+      },
+      "wall_s": 20.3,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-medium__py-bugfix-workdays__r3",
+      "config": "cx-gpt6luna-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.002185,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 11671,
+        "cache_read": 81408,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 567,
+        "reasoning_output": 103
+      },
+      "wall_s": 20.1,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-medium__py-feature-slugify__r1",
+      "config": "cx-gpt6luna-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.002393,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8841,
+        "cache_read": 85504,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1484,
+        "reasoning_output": 375
+      },
+      "wall_s": 34.8,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-medium__py-feature-slugify__r2",
+      "config": "cx-gpt6luna-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.00266,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 13808,
+        "cache_read": 80384,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1146,
+        "reasoning_output": 199
+      },
+      "wall_s": 37.5,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6luna-medium__py-feature-slugify__r3",
+      "config": "cx-gpt6luna-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.002435,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 7878,
+        "cache_read": 103680,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1399,
+        "reasoning_output": 272
+      },
+      "wall_s": 34.2,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-high__py-bugfix-workdays__r1",
+      "config": "cx-gpt6sol-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.05032,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 12832,
+        "cache_read": 80000,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1050,
+        "reasoning_output": 53
+      },
+      "wall_s": 40.3,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-high__py-bugfix-workdays__r2",
+      "config": "cx-gpt6sol-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.042279,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8824,
+        "cache_read": 83200,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 954,
+        "reasoning_output": 43
+      },
+      "wall_s": 39.3,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-high__py-bugfix-workdays__r3",
+      "config": "cx-gpt6sol-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.043745,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 9164,
+        "cache_read": 83200,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1038,
+        "reasoning_output": 127
+      },
+      "wall_s": 41.8,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-high__py-feature-slugify__r1",
+      "config": "cx-gpt6sol-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.036142,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5947,
+        "cache_read": 59008,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1377,
+        "reasoning_output": 148
+      },
+      "wall_s": 49.0,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-high__py-feature-slugify__r2",
+      "config": "cx-gpt6sol-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.036315,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5929,
+        "cache_read": 59136,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1396,
+        "reasoning_output": 64
+      },
+      "wall_s": 54.2,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-high__py-feature-slugify__r3",
+      "config": "cx-gpt6sol-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.035445,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5886,
+        "cache_read": 59008,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1317,
+        "reasoning_output": 91
+      },
+      "wall_s": 48.7,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-low__py-bugfix-workdays__r1",
+      "config": "cx-gpt6sol-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.076203,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 26648,
+        "cache_read": 82944,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 911,
+        "reasoning_output": 9
+      },
+      "wall_s": 41.5,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-low__py-bugfix-workdays__r2",
+      "config": "cx-gpt6sol-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.039663,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8430,
+        "cache_read": 82432,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 777,
+        "reasoning_output": 18
+      },
+      "wall_s": 33.9,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-low__py-bugfix-workdays__r3",
+      "config": "cx-gpt6sol-low",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.04041,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8507,
+        "cache_read": 82432,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 839,
+        "reasoning_output": 11
+      },
+      "wall_s": 34.8,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-low__py-feature-slugify__r1",
+      "config": "cx-gpt6sol-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.040924,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6458,
+        "cache_read": 76288,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1425,
+        "reasoning_output": 39
+      },
+      "wall_s": 56.3,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-low__py-feature-slugify__r2",
+      "config": "cx-gpt6sol-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.042535,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 10823,
+        "cache_read": 53888,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1167,
+        "reasoning_output": 51
+      },
+      "wall_s": 42.8,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-low__py-feature-slugify__r3",
+      "config": "cx-gpt6sol-low",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "low",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.034949,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5819,
+        "cache_read": 59008,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1279,
+        "reasoning_output": 50
+      },
+      "wall_s": 47.5,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-medium__py-bugfix-workdays__r1",
+      "config": "cx-gpt6sol-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.052553,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 15675,
+        "cache_read": 75392,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 805,
+        "reasoning_output": 16
+      },
+      "wall_s": 33.3,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-medium__py-bugfix-workdays__r2",
+      "config": "cx-gpt6sol-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.046208,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 11845,
+        "cache_read": 79104,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 839,
+        "reasoning_output": 11
+      },
+      "wall_s": 33.6,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-medium__py-bugfix-workdays__r3",
+      "config": "cx-gpt6sol-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.045229,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8779,
+        "cache_read": 100992,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 913,
+        "reasoning_output": 12
+      },
+      "wall_s": 42.3,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-medium__py-feature-slugify__r1",
+      "config": "cx-gpt6sol-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "error",
+      "passed": false,
+      "cost": 0.0,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 0,
+        "cache_read": 0,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 0,
+        "reasoning_output": 0
+      },
+      "wall_s": 0.3,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-medium__py-feature-slugify__r2",
+      "config": "cx-gpt6sol-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.034695,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5802,
+        "cache_read": 59008,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1256,
+        "reasoning_output": 37
+      },
+      "wall_s": 49.1,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-medium__py-feature-slugify__r3",
+      "config": "cx-gpt6sol-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.042184,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 9748,
+        "cache_read": 55168,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1320,
+        "reasoning_output": 61
+      },
+      "wall_s": 48.8,
+      "share": {
+        "week": 0.0,
+        "week_luna_reserve_weekly_limit": 0.0
+      }
+    }
+  ]
+}

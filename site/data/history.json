@@ -146,6 +146,416 @@
           "enough_data": true
         }
       }
+    },
+    {
+      "run_id": "20260926-131025",
+      "date": "26.09.2026",
+      "region": "eu",
+      "currency": "EUR",
+      "quality_floor": 0.8,
+      "prices_commit": "4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d",
+      "recommendation": "cx-gpt6luna-low",
+      "cells": {
+        "cc-fable51-high": {
+          "harness": "claude",
+          "model": "claude-fable-5-1",
+          "effort": "high",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.7368246666666667,
+          "mean_cost": 0.7368246666666667,
+          "median_wall_s": 19.4,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-fable51-low": {
+          "harness": "claude",
+          "model": "claude-fable-5-1",
+          "effort": "low",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.7204366666666666,
+          "mean_cost": 0.7204366666666666,
+          "median_wall_s": 17.9,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-fable51-medium": {
+          "harness": "claude",
+          "model": "claude-fable-5-1",
+          "effort": "medium",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.7260003333333334,
+          "mean_cost": 0.7260003333333334,
+          "median_wall_s": 18.3,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-haiku45-high": {
+          "harness": "claude",
+          "model": "claude-haiku-4-5",
+          "effort": "high",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.09510633333333333,
+          "mean_cost": 0.09510633333333333,
+          "median_wall_s": 33.4,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cc-haiku45-low": {
+          "harness": "claude",
+          "model": "claude-haiku-4-5",
+          "effort": "low",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.09091266666666668,
+          "mean_cost": 0.09091266666666668,
+          "median_wall_s": 29.1,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-haiku45-medium": {
+          "harness": "claude",
+          "model": "claude-haiku-4-5",
+          "effort": "medium",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.08855099999999999,
+          "mean_cost": 0.08855099999999999,
+          "median_wall_s": 28.8,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-opus55-high": {
+          "harness": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.28596366666666667,
+          "mean_cost": 0.28596366666666667,
+          "median_wall_s": 11.2,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cc-opus55-low": {
+          "harness": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "low",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.272931,
+          "mean_cost": 0.272931,
+          "median_wall_s": 9.1,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-opus55-medium": {
+          "harness": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "medium",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.28816766666666666,
+          "mean_cost": 0.28816766666666666,
+          "median_wall_s": 10.3,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cc-sonnet5-high": {
+          "harness": "claude",
+          "model": "claude-sonnet-5",
+          "effort": "high",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.14649166666666666,
+          "mean_cost": 0.14649166666666666,
+          "median_wall_s": 7.3,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cc-sonnet5-low": {
+          "harness": "claude",
+          "model": "claude-sonnet-5",
+          "effort": "low",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.15376166666666666,
+          "mean_cost": 0.15376166666666666,
+          "median_wall_s": 8.1,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-sonnet5-medium": {
+          "harness": "claude",
+          "model": "claude-sonnet-5",
+          "effort": "medium",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.14555966666666667,
+          "mean_cost": 0.14555966666666667,
+          "median_wall_s": 6.7,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6astra-high": {
+          "harness": "codex",
+          "model": "gpt-6-astra",
+          "effort": "high",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.2897266666666667,
+          "mean_cost": 0.2897266666666667,
+          "median_wall_s": 43.3,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6astra-low": {
+          "harness": "codex",
+          "model": "gpt-6-astra",
+          "effort": "low",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.223958,
+          "mean_cost": 0.223958,
+          "median_wall_s": 34.3,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6astra-medium": {
+          "harness": "codex",
+          "model": "gpt-6-astra",
+          "effort": "medium",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.24854233333333334,
+          "mean_cost": 0.24854233333333334,
+          "median_wall_s": 44.6,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6luna-high": {
+          "harness": "codex",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.0018753333333333332,
+          "mean_cost": 0.0018753333333333332,
+          "median_wall_s": 22.9,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cx-gpt6luna-low": {
+          "harness": "codex",
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.0017066666666666664,
+          "mean_cost": 0.0017066666666666664,
+          "median_wall_s": 14.8,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6luna-medium": {
+          "harness": "codex",
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.0019673333333333335,
+          "mean_cost": 0.0019673333333333335,
+          "median_wall_s": 20.1,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6sol-high": {
+          "harness": "codex",
+          "model": "gpt-6-sol",
+          "effort": "high",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.045447999999999995,
+          "mean_cost": 0.045447999999999995,
+          "median_wall_s": 40.3,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6sol-low": {
+          "harness": "codex",
+          "model": "gpt-6-sol",
+          "effort": "low",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.052092,
+          "mean_cost": 0.052092,
+          "median_wall_s": 34.8,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6sol-medium": {
+          "harness": "codex",
+          "model": "gpt-6-sol",
+          "effort": "medium",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.04799666666666667,
+          "mean_cost": 0.04799666666666667,
+          "median_wall_s": 33.6,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        }
+      }
     }
   ],
   "backend-greenfield": [
@@ -293,6 +703,416 @@
           "week_pct_per_task": 0.0,
           "tasks_per_week_at_limit": null,
           "enough_data": true
+        }
+      }
+    },
+    {
+      "run_id": "20260926-131025",
+      "date": "26.09.2026",
+      "region": "eu",
+      "currency": "EUR",
+      "quality_floor": 0.8,
+      "prices_commit": "4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d",
+      "recommendation": "cx-gpt6luna-medium",
+      "cells": {
+        "cc-fable51-high": {
+          "harness": "claude",
+          "model": "claude-fable-5-1",
+          "effort": "high",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.936273,
+          "mean_cost": 0.936273,
+          "median_wall_s": 44.0,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-fable51-low": {
+          "harness": "claude",
+          "model": "claude-fable-5-1",
+          "effort": "low",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.8194033333333333,
+          "mean_cost": 0.8194033333333333,
+          "median_wall_s": 30.3,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-fable51-medium": {
+          "harness": "claude",
+          "model": "claude-fable-5-1",
+          "effort": "medium",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.8603516666666667,
+          "mean_cost": 0.8603516666666667,
+          "median_wall_s": 41.0,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-haiku45-high": {
+          "harness": "claude",
+          "model": "claude-haiku-4-5",
+          "effort": "high",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.193026,
+          "mean_cost": 0.193026,
+          "median_wall_s": 109.9,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cc-haiku45-low": {
+          "harness": "claude",
+          "model": "claude-haiku-4-5",
+          "effort": "low",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.28921,
+          "mean_cost": 0.28921,
+          "median_wall_s": 171.6,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-haiku45-medium": {
+          "harness": "claude",
+          "model": "claude-haiku-4-5",
+          "effort": "medium",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.30856333333333336,
+          "mean_cost": 0.30856333333333336,
+          "median_wall_s": 147.8,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-opus55-high": {
+          "harness": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "high",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.342517,
+          "mean_cost": 0.342517,
+          "median_wall_s": 28.5,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cc-opus55-low": {
+          "harness": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "low",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.295246,
+          "mean_cost": 0.295246,
+          "median_wall_s": 14.0,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-opus55-medium": {
+          "harness": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "medium",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.311941,
+          "mean_cost": 0.311941,
+          "median_wall_s": 19.5,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cc-sonnet5-high": {
+          "harness": "claude",
+          "model": "claude-sonnet-5",
+          "effort": "high",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.19471433333333332,
+          "mean_cost": 0.19471433333333332,
+          "median_wall_s": 18.5,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cc-sonnet5-low": {
+          "harness": "claude",
+          "model": "claude-sonnet-5",
+          "effort": "low",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.157237,
+          "mean_cost": 0.157237,
+          "median_wall_s": 9.5,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cc-sonnet5-medium": {
+          "harness": "claude",
+          "model": "claude-sonnet-5",
+          "effort": "medium",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.16116833333333333,
+          "mean_cost": 0.16116833333333333,
+          "median_wall_s": 12.7,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6astra-high": {
+          "harness": "codex",
+          "model": "gpt-6-astra",
+          "effort": "high",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.20373166666666667,
+          "mean_cost": 0.20373166666666667,
+          "median_wall_s": 51.5,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6astra-low": {
+          "harness": "codex",
+          "model": "gpt-6-astra",
+          "effort": "low",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.18481033333333333,
+          "mean_cost": 0.18481033333333333,
+          "median_wall_s": 47.6,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6astra-medium": {
+          "harness": "codex",
+          "model": "gpt-6-astra",
+          "effort": "medium",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.17708233333333334,
+          "mean_cost": 0.17708233333333334,
+          "median_wall_s": 49.7,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6luna-high": {
+          "harness": "codex",
+          "model": "gpt-6-luna",
+          "effort": "high",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.0030643333333333334,
+          "mean_cost": 0.0030643333333333334,
+          "median_wall_s": 54.5,
+          "week_pct_per_task": 0.16666666666666666,
+          "tasks_per_week_at_limit": 600.0,
+          "enough_data": true
+        },
+        "cx-gpt6luna-low": {
+          "harness": "codex",
+          "model": "gpt-6-luna",
+          "effort": "low",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.002728333333333333,
+          "mean_cost": 0.002728333333333333,
+          "median_wall_s": 29.4,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6luna-medium": {
+          "harness": "codex",
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.002496,
+          "mean_cost": 0.002496,
+          "median_wall_s": 34.8,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6sol-high": {
+          "harness": "codex",
+          "model": "gpt-6-sol",
+          "effort": "high",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.03596733333333333,
+          "mean_cost": 0.03596733333333333,
+          "median_wall_s": 49.0,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6sol-low": {
+          "harness": "codex",
+          "model": "gpt-6-sol",
+          "effort": "low",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.039469333333333335,
+          "mean_cost": 0.039469333333333335,
+          "median_wall_s": 47.5,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6sol-medium": {
+          "harness": "codex",
+          "model": "gpt-6-sol",
+          "effort": "medium",
+          "plan": "chatgpt-pro-20x",
+          "n": 2,
+          "passed": 2,
+          "pass_rate": 1.0,
+          "ci": [
+            0.34237195288961925,
+            1.0
+          ],
+          "cost_per_solved": 0.0384395,
+          "mean_cost": 0.0384395,
+          "median_wall_s": 49.1,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": false
         }
       }
     }
