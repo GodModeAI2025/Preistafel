@@ -50,6 +50,55 @@
       }
     },
     {
+      "run_id": "20260925-221116",
+      "date": "25.09.2026",
+      "region": "eu",
+      "currency": "EUR",
+      "quality_floor": 0.8,
+      "prices_commit": "4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d",
+      "recommendation": "cx-gpt6sol-medium",
+      "cells": {
+        "cx-gpt6sol-high": {
+          "harness": "codex",
+          "model": "gpt-6-sol",
+          "effort": "high",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.05796166666666667,
+          "mean_cost": 0.05796166666666667,
+          "median_wall_s": 40.6,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6sol-medium": {
+          "harness": "codex",
+          "model": "gpt-6-sol",
+          "effort": "medium",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.04675866666666667,
+          "mean_cost": 0.04675866666666667,
+          "median_wall_s": 40.8,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        }
+      }
+    },
+    {
       "run_id": "20260926-095147",
       "date": "26.09.2026",
       "region": "eu",
@@ -145,6 +194,55 @@
           "median_wall_s": 12.9,
           "week_pct_per_task": 0.20000000000000004,
           "tasks_per_week_at_limit": 499.9999999999999,
+          "enough_data": true
+        }
+      }
+    },
+    {
+      "run_id": "20260925-221116",
+      "date": "25.09.2026",
+      "region": "eu",
+      "currency": "EUR",
+      "quality_floor": 0.8,
+      "prices_commit": "4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d",
+      "recommendation": "cx-gpt6sol-medium",
+      "cells": {
+        "cx-gpt6sol-high": {
+          "harness": "codex",
+          "model": "gpt-6-sol",
+          "effort": "high",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.041551333333333336,
+          "mean_cost": 0.041551333333333336,
+          "median_wall_s": 56.6,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cx-gpt6sol-medium": {
+          "harness": "codex",
+          "model": "gpt-6-sol",
+          "effort": "medium",
+          "plan": "chatgpt-pro-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.03726633333333333,
+          "mean_cost": 0.03726633333333333,
+          "median_wall_s": 47.8,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
           "enough_data": true
         }
       }

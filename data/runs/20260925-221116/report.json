@@ -1,0 +1,407 @@
+{
+  "run_id": "20260925-221116",
+  "region": "eu",
+  "currency": "EUR",
+  "fx": 0.8769622029290537,
+  "prices_source": "https://raw.githubusercontent.com/BerriAI/litellm/4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d/model_prices_and_context_window.json",
+  "prices_commit": "4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d",
+  "prices_fetched": "2026-09-26T07:51:48+00:00",
+  "quota_mode": "block",
+  "quality_floor": 0.8,
+  "recommendation": "cx-gpt6sol-medium",
+  "configs": [
+    {
+      "config": "cx-gpt6sol-medium",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.0420125,
+      "cost_per_solved": 0.0420125,
+      "median_tokens": 79163.5,
+      "median_wall_s": 45.849999999999994,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": null,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 963.4079999220602,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cx-gpt6sol-high",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.0497565,
+      "cost_per_solved": 0.0497565,
+      "median_tokens": 79421.5,
+      "median_wall_s": 52.15,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": null,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 813.4651472013818,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    }
+  ],
+  "excluded": {
+    "rate_limited": 0,
+    "error": 0
+  },
+  "trials": [
+    {
+      "trial_id": "cx-gpt6sol-high__py-bugfix-workdays__r1",
+      "config": "cx-gpt6sol-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.052334,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 14811,
+        "cache_read": 76544,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 932,
+        "reasoning_output": 38
+      },
+      "wall_s": 40.6,
+      "share": {
+        "week": 0.0,
+        "week_26": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-high__py-bugfix-workdays__r2",
+      "config": "cx-gpt6sol-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.054412,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 16084,
+        "cache_read": 75136,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 921,
+        "reasoning_output": 59
+      },
+      "wall_s": 40.2,
+      "share": {
+        "week": 0.0,
+        "week_26": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-high__py-bugfix-workdays__r3",
+      "config": "cx-gpt6sol-high",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.067139,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 17058,
+        "cache_read": 114816,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1252,
+        "reasoning_output": 36
+      },
+      "wall_s": 54.3,
+      "share": {
+        "week": 0.0,
+        "week_26": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-high__py-feature-slugify__r1",
+      "config": "cx-gpt6sol-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.042971,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 9966,
+        "cache_read": 55168,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1358,
+        "reasoning_output": 101
+      },
+      "wall_s": 50.0,
+      "share": {
+        "week": 0.0,
+        "week_26": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-high__py-feature-slugify__r2",
+      "config": "cx-gpt6sol-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.037698,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6051,
+        "cache_read": 59136,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1515,
+        "reasoning_output": 156
+      },
+      "wall_s": 59.7,
+      "share": {
+        "week": 0.0,
+        "week_26": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-high__py-feature-slugify__r3",
+      "config": "cx-gpt6sol-high",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.043985,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 9696,
+        "cache_read": 55424,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1512,
+        "reasoning_output": 156
+      },
+      "wall_s": 56.6,
+      "share": {
+        "week": 0.0,
+        "week_26": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-medium__py-bugfix-workdays__r1",
+      "config": "cx-gpt6sol-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.040782,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8935,
+        "cache_read": 82432,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 792,
+        "reasoning_output": 27
+      },
+      "wall_s": 40.8,
+      "share": {
+        "week": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-medium__py-bugfix-workdays__r2",
+      "config": "cx-gpt6sol-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.058929,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 16224,
+        "cache_read": 93952,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 985,
+        "reasoning_output": 11
+      },
+      "wall_s": 44.8,
+      "share": {
+        "week": 0.0,
+        "week_26": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-medium__py-bugfix-workdays__r3",
+      "config": "cx-gpt6sol-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.040565,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8622,
+        "cache_read": 82688,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 827,
+        "reasoning_output": 14
+      },
+      "wall_s": 40.5,
+      "share": {
+        "week": 0.0,
+        "week_26": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-medium__py-feature-slugify__r1",
+      "config": "cx-gpt6sol-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.034642,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5805,
+        "cache_read": 59008,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1250,
+        "reasoning_output": 62
+      },
+      "wall_s": 47.8,
+      "share": {
+        "week": 0.0,
+        "week_26": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-medium__py-feature-slugify__r2",
+      "config": "cx-gpt6sol-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.035146,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 5856,
+        "cache_read": 59008,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1292,
+        "reasoning_output": 84
+      },
+      "wall_s": 46.9,
+      "share": {
+        "week": 0.0,
+        "week_26": 0.0
+      }
+    },
+    {
+      "trial_id": "cx-gpt6sol-medium__py-feature-slugify__r3",
+      "config": "cx-gpt6sol-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.042011,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 9713,
+        "cache_read": 55168,
+        "cache_write_5m": 0,
+        "cache_write_1h": 0,
+        "output": 1309,
+        "reasoning_output": 51
+      },
+      "wall_s": 50.1,
+      "share": {
+        "week": 0.0,
+        "week_26": 0.0
+      }
+    }
+  ]
+}

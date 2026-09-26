@@ -21,7 +21,7 @@ import sys
 
 PCT = re.compile(r"(\d{1,3}(?:[.,]\d+)?)\s*%\s*(used|left|remaining|verbraucht|übrig)?", re.I)
 RESET = re.compile(r"reset[s]?\s*(?:at|in|on)?\s*[:]?\s*(.+?)\)?\s*$", re.I)
-LIMIT_HIT = re.compile(r"(hit your (?:session|weekly|usage|opus|sonnet|fable)\s*limit|usage limit reached|rate.?limit(?:ed)?|try again at)", re.I)
+LIMIT_HIT = re.compile(r"(hit your (?:session|weekly|usage|opus|sonnet|fable)\s*limit|usage limit reached|rate.?limited|rate.?limit (?:reached|exceeded|hit)|try again at)", re.I)
 
 
 def classify(label: str) -> str:

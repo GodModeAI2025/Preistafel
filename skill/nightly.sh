@@ -8,7 +8,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 PY=python3.13
-CONFIGS="${NIGHTLY_CONFIGS:-cc-sonnet5-medium,cc-opus55-medium}"
+CONFIGS="${NIGHTLY_CONFIGS:-cc-sonnet5-medium,cc-opus55-medium,cx-gpt6sol-medium,cx-gpt6sol-high}"
 PUBLISH_CONFIG="${PUBLISH_CONFIG:-config/publish.toml}"
 RUNS="${HERDR_BENCH_RUNS:-$HOME/herdr-bench-runs}"
 RUN_ID="$(date +%Y%m%d-%H%M%S)"
