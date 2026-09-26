@@ -1,0 +1,15 @@
+ Settings:  Status   Config   Usage
+
+ Current session
+ ███████████▌                                       23% used
+ Resets 4pm (Europe/Berlin)
+
+ Current week (all models)
+ ████████████████████                               41% used
+ Resets Oct 1, 9am (Europe/Berlin)
+
+ Current week (Opus)
+ ██████                                             12% used
+ Resets Oct 1, 9am (Europe/Berlin)
+
+ Esc to cancel

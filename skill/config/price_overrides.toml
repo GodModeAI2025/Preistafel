@@ -1,0 +1,9 @@
+# Offizielle Werte, die die LiteLLM-Datei überschreiben (USD pro 1 Mio Tokens, VOR Regionsaufschlag).
+# Beispiel:
+# ["claude-opus-5-5"]
+# input = 4.0
+# output = 20.0
+# cache_read = 0.2
+# cache_write_5m = 5.0
+# cache_write_1h = 8.0
+# source = "https://platform.claude.com/docs/en/about-claude/pricing (2026-09-25)"

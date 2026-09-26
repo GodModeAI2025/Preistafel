@@ -1,0 +1,75 @@
+{
+  "region": "eu",
+  "currency": "EUR",
+  "fx_usd_to_local": 0.8769622029290537,
+  "fx_source": "EZB 2026-09-25",
+  "fetched_at": "2026-09-26T07:51:48+00:00",
+  "source": "https://raw.githubusercontent.com/BerriAI/litellm/4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d/model_prices_and_context_window.json",
+  "source_commit": "4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d",
+  "models": {
+    "claude-opus-5-5": {
+      "price_key": "eu.anthropic.claude-opus-5-5",
+      "multiplier": 1.0,
+      "note": "Claude über Bedrock EU-Profil (Anthropic-API selbst hat kein EU-Geo)",
+      "override": false,
+      "override_source": null,
+      "usd_per_mtok": {
+        "input": 4.4,
+        "output": 22.0,
+        "cache_read": 0.22,
+        "cache_write_5m": 5.5,
+        "cache_write_1h": 8.8
+      },
+      "local_per_mtok": {
+        "input": 3.858634,
+        "output": 19.293168,
+        "cache_read": 0.192932,
+        "cache_write_5m": 4.823292,
+        "cache_write_1h": 7.717267
+      }
+    },
+    "claude-sonnet-5": {
+      "price_key": "eu.anthropic.claude-sonnet-5",
+      "multiplier": 1.0,
+      "note": "Claude über Bedrock EU-Profil (Anthropic-API selbst hat kein EU-Geo)",
+      "override": false,
+      "override_source": null,
+      "usd_per_mtok": {
+        "input": 2.2,
+        "output": 11.0,
+        "cache_read": 0.22,
+        "cache_write_5m": 2.75,
+        "cache_write_1h": 4.4
+      },
+      "local_per_mtok": {
+        "input": 1.929317,
+        "output": 9.646584,
+        "cache_read": 0.192932,
+        "cache_write_5m": 2.411646,
+        "cache_write_1h": 3.858634
+      }
+    },
+    "gpt-6-sol": {
+      "price_key": "gpt-6-sol",
+      "multiplier": 1.1,
+      "note": "OpenAI regional processing EU",
+      "override": false,
+      "override_source": null,
+      "usd_per_mtok": {
+        "input": 2.2,
+        "output": 11.0,
+        "cache_read": 0.22,
+        "cache_write_5m": 2.75,
+        "cache_write_1h": null
+      },
+      "local_per_mtok": {
+        "input": 1.929317,
+        "output": 9.646584,
+        "cache_read": 0.192932,
+        "cache_write_5m": 2.411646,
+        "cache_write_1h": null
+      }
+    }
+  },
+  "missing": []
+}

@@ -1,0 +1,16 @@
+id = "py-feature-slugify"
+title = "Feature: deutschsprachiger Slug-Generator"
+cohort = "backend-greenfield"
+difficulty = "medium"
+timeout_s = 900
+verify_timeout_s = 120
+fixture = "fixture"
+verify = "verify.sh"
+prompt = """
+Implementiere in slug.py die Funktion slugify(text: str, max_len: int = 60) -> str.
+Regeln: Kleinbuchstaben; ä->ae, ö->oe, ü->ue, ß->ss (auch Großbuchstaben);
+andere Akzente entfernen (é->e); alles außer a-z und 0-9 wird zu einem einzelnen '-';
+keine '-' am Anfang oder Ende; bei Kürzung auf max_len nicht mitten im Wort schneiden,
+sondern am letzten '-' davor (ist kein '-' vorhanden, hart kürzen). Nur Standardbibliothek.
+Schreibe Tests in test_slug.py.
+"""

@@ -1,0 +1,23 @@
+# Abbildung einer Region auf Preisquellen in der LiteLLM-Preisdatei.
+# key: Muster für den Preisschlüssel ({model} wird ersetzt), Liste = Fallback-Reihenfolge.
+# multiplier: fester Aufschlag, oder "field:<name>" = Feld aus dem Preiseintrag.
+
+[global]
+currency = "USD"
+anthropic = { keys = ["{model}", "global.anthropic.{model}"], multiplier = 1.0, note = "Anthropic API, globales Routing" }
+openai    = { keys = ["{model}"], multiplier = 1.0, note = "OpenAI API, global" }
+
+[us]
+currency = "USD"
+anthropic = { keys = ["{model}"], multiplier = 1.1, note = "inference_geo=us, 1.1x (Claude 4.6+)" }
+openai    = { keys = ["{model}"], multiplier = "field:regional_processing_uplift_multiplier_us", note = "OpenAI regional processing US" }
+
+[eu]
+currency = "EUR"
+anthropic = { keys = ["eu.anthropic.{model}"], multiplier = 1.0, fallback_keys = ["{model}"], fallback_multiplier = 1.1, note = "Claude über Bedrock EU-Profil (Anthropic-API selbst hat kein EU-Geo)" }
+openai    = { keys = ["{model}"], multiplier = "field:regional_processing_uplift_multiplier_eu", note = "OpenAI regional processing EU" }
+
+[eu-azure]
+currency = "EUR"
+anthropic = { keys = ["eu.anthropic.{model}"], multiplier = 1.0, note = "Claude über Bedrock EU" }
+openai    = { keys = ["azure/eu/{model}"], multiplier = 1.0, fallback_keys = ["azure/{model}"], fallback_multiplier = 1.1, note = "Azure OpenAI EU Data Zone" }

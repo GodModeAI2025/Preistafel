@@ -1,0 +1,6 @@
+>_ OpenAI Codex (v0.71.0)
+ Model:            gpt-6-sol (reasoning high)
+ Account:          user@example.com (Pro)
+ Context window:   12% used
+ 5h limit:         [██████░░░░░░░░] 34% used (resets 14:20)
+ Weekly limit:     [██░░░░░░░░░░░░] 12% used (resets 09:00 on 1 Oct)

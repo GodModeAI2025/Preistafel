@@ -1,0 +1,4 @@
+{"type": "session_meta", "payload": {"id": "r1", "cwd": "/tmp/work/x"}}
+{"type": "turn_context", "payload": {"cwd": "/tmp/work/x", "model": "gpt-6-sol", "effort": "high"}}
+{"type": "event_msg", "payload": {"type": "token_count", "info": null, "rate_limits": {"primary": {"used_percent": 10.0, "window_minutes": 300, "resets_at": 1790000000}, "secondary": {"used_percent": 3.0, "window_minutes": 10080, "resets_at": 1790500000}}}}
+{"type": "event_msg", "payload": {"type": "token_count", "info": {"total_token_usage": {"input_tokens": 50000, "cached_input_tokens": 30000, "output_tokens": 4000, "reasoning_output_tokens": 2500, "total_tokens": 54000}}, "rate_limits": {"primary": {"used_percent": 11.5, "window_minutes": 300, "resets_at": 1790000000}, "secondary": {"used_percent": 3.4, "window_minutes": 10080, "resets_at": 1790500000}}}}

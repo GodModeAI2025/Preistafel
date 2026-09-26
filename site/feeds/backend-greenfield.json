@@ -1,8 +1,8 @@
 {
   "feed_version": "1.0",
   "cohort": "backend-greenfield",
-  "run_id": "20260925-215850",
-  "date": "25.09.2026",
+  "run_id": "20260926-095147",
+  "date": "26.09.2026",
   "region": "eu",
   "currency": "EUR",
   "recommendation": "cc-sonnet5-medium",
@@ -20,9 +20,9 @@
         0.43849391955098227,
         1.0
       ],
-      "cost_per_solved": 0.32524400000000003,
-      "mean_cost": 0.32524400000000003,
-      "median_wall_s": 22.1,
+      "cost_per_solved": 0.3086006666666667,
+      "mean_cost": 0.3086006666666667,
+      "median_wall_s": 19.1,
       "week_pct_per_task": 0.0,
       "tasks_per_week_at_limit": null,
       "enough_data": true
@@ -39,11 +39,11 @@
         0.43849391955098227,
         1.0
       ],
-      "cost_per_solved": 0.16283933333333334,
-      "mean_cost": 0.16283933333333334,
-      "median_wall_s": 12.9,
-      "week_pct_per_task": 0.20000000000000004,
-      "tasks_per_week_at_limit": 499.9999999999999,
+      "cost_per_solved": 0.16901600000000003,
+      "mean_cost": 0.16901600000000003,
+      "median_wall_s": 13.6,
+      "week_pct_per_task": 0.0,
+      "tasks_per_week_at_limit": null,
       "enough_data": true
     }
   }

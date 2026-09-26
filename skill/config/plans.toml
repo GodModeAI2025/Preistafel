@@ -1,0 +1,13 @@
+# Abo-Preise in USD/Monat (Listenpreis). Für Abo-Äquivalent und Break-even.
+[claude-pro]
+usd_month = 20
+[claude-max-5x]
+usd_month = 100
+[claude-max-20x]
+usd_month = 200
+[chatgpt-plus]
+usd_month = 20
+[chatgpt-pro-5x]
+usd_month = 100
+[chatgpt-pro-20x]
+usd_month = 200

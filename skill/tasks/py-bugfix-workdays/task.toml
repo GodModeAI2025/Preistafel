@@ -1,0 +1,14 @@
+id = "py-bugfix-workdays"
+title = "Bugfix: Arbeitstage zwischen zwei Daten"
+cohort = "backend-brownfield"
+difficulty = "easy"
+timeout_s = 900
+verify_timeout_s = 120
+fixture = "fixture"
+verify = "verify.sh"
+prompt = """
+Im Modul workdays.py liefert count_workdays(start, end) falsche Ergebnisse,
+sobald der Zeitraum ein Wochenende oder einen Feiertag aus HOLIDAYS enthält.
+Behebe den Fehler, ohne die Signatur zu ändern. Beide Grenzen zählen mit,
+start > end ergibt 0. Ergänze einen Test in test_workdays.py, der den Fehler abdeckt.
+"""

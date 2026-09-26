@@ -1,0 +1,11 @@
+# Veröffentlichung auf git (GitHub Pages). Zugangsdaten nutzt git selbst (SSH-Key oder gh auth);
+# der Skill liest oder speichert keine Credentials.
+
+remote = "https://github.com/GodModeAI2025/Preistafel.git"
+branch = "main"
+repo_dir = "~/Desktop/Preistafel"              # lokaler Klon, wird bei Bedarf angelegt
+site_title = "Preistafel KI-Coding-Modelle"
+site_subtitle = "Gemessen in echten Claude-Code-Sessions (Abo), bewertet mit regionalen API-Preisen"
+pages_url = "https://godmodeai2025.github.io/Preistafel/"                                  # z. B. https://<owner>.github.io/<repo>/ (nur Anzeige)
+publish_skill = false                           # vorübergehend: Test-Key in selftest.py blockiert den Geheimnis-Scan
+min_trials_per_cell = 3                         # darunter erscheint eine Konfiguration als "zu wenig Daten"
