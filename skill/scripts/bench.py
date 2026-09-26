@@ -33,6 +33,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # Läufe liegen AUSSERHALB des Skill-Ordners, damit Agents die versteckten Tests nicht finden.
 RUNS = Path(os.environ.get("HERDR_BENCH_RUNS", Path.home() / "herdr-bench-runs"))
 DRY = False
+SKIP_ON_LIMIT = False
 TRUST_RX = re.compile(r"(trust (the files|this folder)|Do you trust|allow Codex to work|Trust this directory)", re.I)
 HOOK_REVIEW_RX = re.compile(r"hooks? needs? review", re.I)
 KEY_VARS = ("ANTHROPIC_API_KEY", "OPENAI_API_KEY", "CODEX_API_KEY", "ANTHROPIC_AUTH_TOKEN")
@@ -348,13 +349,17 @@ def quota_probe(cfg: dict, defaults: dict, run_dir: Path, tag: str) -> dict:
         close_session(sess)
 
 
-def wait_for_capacity(cfg, defaults, run_dir) -> None:
+def wait_for_capacity(cfg, defaults, run_dir, skip: bool = False) -> bool:
+    """True = Kontingent frei. Mit skip=True wird nicht gewartet, sondern False gemeldet (Block überspringen)."""
     thr = defaults.get("limit_pause_threshold", 98)
     waited = 0
     while True:
         q = quota_probe(cfg, defaults, run_dir, "check")
         if not q.get("limit_hit") and Q.max_used(q) < thr:
-            return
+            return True
+        if skip:
+            log(f"Kontingent {cfg['harness']} bei {Q.max_used(q):.0f} % – Block wird übersprungen")
+            return False
         if waited >= 8 * 3600:
             raise SystemExit("Kontingent nach 8 h Wartezeit nicht frei; Lauf abgebrochen (Fortsetzen mit run --resume).")
         log(f"Kontingent {cfg['harness']} bei {Q.max_used(q):.0f} % – pausiere 15 min (bisher {waited // 60} min)")
@@ -372,14 +377,16 @@ def cmd_run(a) -> int:
     done = 0
     single = plan["quota_mode"] == "single"
     blocks_out = run_dir / "blocks.jsonl"
+    skipped: list[str] = []
     for b in plan["blocks"]:
         cfg = plan["configs"][b["config"]]
         todo = [t for t in b["trials"] if not (tdir / f"{t['trial_id']}.json").exists()]
         done += len(b["trials"]) - len(todo)
         if not todo:
             continue
-        if not DRY:
-            wait_for_capacity(cfg, plan["defaults"], run_dir)
+        if not DRY and not wait_for_capacity(cfg, plan["defaults"], run_dir, skip=SKIP_ON_LIMIT):
+            skipped.append(b["config"])
+            continue
         qb = None if single else quota_probe(cfg, plan["defaults"], run_dir, "before")
         ids = []
         for t in todo:
@@ -405,6 +412,8 @@ def cmd_run(a) -> int:
                 fh.write(json.dumps({"config": b["config"], "harness": cfg["harness"], "plan": cfg["plan"],
                                      "trial_ids": ids, "quota_before": qb, "quota_after": qa,
                                      "delta": Q.delta(qb or {}, qa)}, ensure_ascii=False) + "\n")
+    if skipped:
+        log(f"Wegen Kontingent übersprungen: {', '.join(skipped)}")
     log(f"Fertig: {run_dir}. Auswertung: python3 scripts/report.py --run {run_dir} --prices prices/<datei>.json")
     return 0
 
@@ -421,7 +430,7 @@ def cmd_trial(a) -> int:
 
 
 def main() -> int:
-    global DRY
+    global DRY, SKIP_ON_LIMIT
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -435,11 +444,13 @@ def main() -> int:
     p.add_argument("--run-id")
     r = sub.add_parser("run")
     r.add_argument("--plan", required=True)
+    r.add_argument("--skip-on-limit", action="store_true", help="Blöcke mit erschöpftem Kontingent überspringen statt warten")
     tr = sub.add_parser("trial")
     tr.add_argument("--plan", required=True)
     tr.add_argument("--trial", required=True)
     a = ap.parse_args()
     DRY = a.dry_run
+    SKIP_ON_LIMIT = getattr(a, "skip_on_limit", False)
     return {"doctor": cmd_doctor, "plan": cmd_plan, "run": cmd_run, "trial": cmd_trial}[a.cmd](a)
 
 

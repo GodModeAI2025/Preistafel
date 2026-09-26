@@ -57,6 +57,11 @@ w2 = s2["windows"]
 check("Codex /status: 5h 34 %", w2.get("five_hour", {}).get("used_pct") == 34, w2)
 check("Codex /status: Woche 12 %", w2.get("week", {}).get("used_pct") == 12, w2)
 check("Codex /status: Kontextanzeige ignoriert", all("Context" not in v["label"] for v in w2.values()), w2)
+s3 = Q.parse_screen((FX / "codex_status_box_screen.txt").read_text())
+check("Codex-Rahmen: Wochenfenster 76 %", s3["windows"].get("week", {}).get("used_pct") == 76.0, s3["windows"])
+check("Codex-Rahmen: Zusatzfenster stabil benannt", "week_luna_reserve_weekly_limit" in s3["windows"], list(s3["windows"]))
+check("Codex-Rahmen: Reset ohne Rahmenreste", s3["windows"].get("week", {}).get("resets") == "09:20 on 30 Sep", s3["windows"].get("week"))
+check("Codex-Rahmen: Hinweistext ist kein Limit", not s3["limit_hit"])
 check("Limit-Meldung erkannt", Q.parse_screen((FX / "claude_limit_screen.txt").read_text())["limit_hit"])
 d = Q.delta({"windows": {"week": {"used_pct": 40}, "five_hour": {"used_pct": 90}}},
             {"windows": {"week": {"used_pct": 41.5}, "five_hour": {"used_pct": 5}}})

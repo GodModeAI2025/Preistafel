@@ -168,12 +168,17 @@ def main() -> int:
         cur = rs[-1]
         (site_dir / "feeds" / f"{cohort}.json").write_text(json.dumps(
             {"feed_version": "1.0", "cohort": cohort, "run_id": cur["run_id"], "date": cur["date"], "region": cur["region"],
-             "currency": cur["currency"], "recommendation": cur["recommendation"], "quality_floor": cur["quality_floor"],
-             "configs": cur["cells"]}, indent=2, ensure_ascii=False))
+             "currency": cur["currency"], "quality_floor": cur["quality_floor"],
+             "recommendation": min((c for c, v in SITE.latest_cells(rs)[0].items() if v["pass_rate"] >= cur["quality_floor"]
+                                    and v["cost_per_solved"] is not None and v["enough_data"]),
+                                   key=lambda c: SITE.latest_cells(rs)[0][c]["cost_per_solved"], default=None),
+             "configs": SITE.latest_cells(rs)[0]}, indent=2, ensure_ascii=False))
     (site_dir / "data" / "history.json").write_text(json.dumps(hist, indent=2, ensure_ascii=False))
+    ov = SITE.overview(reports, int(cfg.get("min_trials_per_cell", 3)))
+    (site_dir / "data" / "overview.json").write_text(json.dumps(ov, indent=2, ensure_ascii=False))
     repo_url = re.sub(r"^git@github\.com:(.+?)(\.git)?$", r"https://github.com/\1", remote)
     (site_dir / "index.html").write_text(SITE.render(hist, cfg.get("site_title", "Preistafel"),
-                                                     cfg.get("site_subtitle", ""), repo_url, skill_ok))
+                                                     cfg.get("site_subtitle", ""), repo_url, skill_ok, overview_cells=ov))
     (site_dir / ".nojekyll").write_text("")
 
     # 5. Pages-Workflow und README

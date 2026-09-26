@@ -27,23 +27,78 @@ main{max-width:980px;margin:auto;padding:40px 18px 64px}
 .spark{width:120px;height:28px} .spark polyline{fill:none;stroke:var(--gold);stroke-width:1.6}
 .board footer{margin-top:12px;font-size:12.5px;color:var(--dim)}
 .note{font-size:14px;color:var(--mut);max-width:70ch} .note h3{color:var(--ink);font-size:16px;margin:28px 0 6px}
-@media (max-width:560px){.row{grid-template-columns:1fr auto} .dots{display:none} .num{font-size:24px}}
+.overview .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.overview table{width:100%;border-collapse:separate;border-spacing:6px;min-width:520px;table-layout:fixed}
+.overview thead th:first-child{width:28%}
+.overview thead th{color:var(--dim);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;text-align:center}
+.overview thead th:first-child{text-align:left}
+.overview tbody th{text-align:left;font-weight:400;font-size:15px;white-space:nowrap;padding-right:6px} .overview tbody th b{font-weight:650}
+.overview tbody th .h{display:inline-block;margin-bottom:3px} .overview tbody th b{display:block}
+.cell{--c:color-mix(in oklab,var(--good) calc((1 - var(--heat)) * 100%),var(--bad));text-align:center;padding:10px 6px;border-radius:10px;
+  background:color-mix(in oklab,var(--c) 22%,transparent);border:1px solid color-mix(in oklab,var(--c) 45%,transparent);position:relative}
+.cell.none{background:transparent;border:1px dashed rgba(243,239,228,.18);color:var(--dim)}
+.cell.thin{opacity:.55} .cell.best{box-shadow:0 0 0 2px var(--gold)}
+.cp{display:block;font:700 22px/1.1 ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums} .cp small{font-size:13px;margin-left:3px;color:var(--dim)}
+.cq{display:block;font-size:12px;color:var(--dim);margin-top:3px} .cq.low{color:var(--bad)}
+.cell .tag{position:absolute;top:-9px;right:-4px;margin:0;font-size:10px;padding:1px 6px}
+@media (max-width:560px){
+  .overview table,.overview thead,.overview tbody{display:block;min-width:0}
+  .overview thead tr,.overview tbody tr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .overview thead th:first-child{display:none} .overview tbody tr{margin-bottom:10px}
+  .overview tbody th{grid-column:1/-1;display:flex;align-items:baseline;gap:6px;padding:6px 0 0} .overview tbody th b{display:inline}
+  .cq{font-size:11px} .cell{padding:8px 4px}
+  .cp{font-size:18px}.row{grid-template-columns:1fr auto} .dots{display:none} .num{font-size:24px}}
 </style></head><body><main>
 <div class=hero><h1>Preistafel KI-Coding-Modelle</h1><p>Gemessen in echten Claude-Code-Sessions (Abo), bewertet mit regionalen API-Preisen. Stand 26.09.2026.</p></div>
-<nav><a href="#backend-brownfield">Backend Brownfield</a> · <a href="#backend-greenfield">Backend Greenfield</a></nav>
+<nav><a href="#uebersicht">Übersicht</a> · <a href="#backend-brownfield">Backend Brownfield</a> · <a href="#backend-greenfield">Backend Greenfield</a></nav>
 
+<section class="board overview" id=uebersicht>
+  <header><h2>Alle Modelle auf einen Blick</h2>
+  <p>Preis pro <b>gelöster</b> Aufgabe über alle Aufgaben · Erfolgsquote · Median-Laufzeit · je Konfiguration die neueste Messung (25.09.2026 bis 26.09.2026)</p></header>
+  <div class=scroll><table>
+    <thead><tr><th>Modell</th><th>low</th><th>medium</th><th>high</th></tr></thead>
+    <tbody><tr><th scope=row><span class="h claude">Claude Code</span><b>claude-opus-5-5</b></th><td class="cell none">–</td><td class="cell" style="--heat:1.00" title="cc-opus55-medium · Lauf 20260926-095147 · 95-%-Intervall 61–100 %"><span class=cp>0,30<small>€</small></span><span class="cq">✓ 100 % · 18 s</span></td><td class="cell none">–</td></tr><tr><th scope=row><span class="h claude">Claude Code</span><b>claude-sonnet-5</b></th><td class="cell none">–</td><td class="cell" style="--heat:0.69" title="cc-sonnet5-medium · Lauf 20260926-095147 · 95-%-Intervall 61–100 %"><span class=cp>0,16<small>€</small></span><span class="cq">✓ 100 % · 13 s</span></td><td class="cell none">–</td></tr><tr><th scope=row><span class="h codex">Codex</span><b>gpt-6-sol</b></th><td class="cell none">–</td><td class="cell best" style="--heat:0.00" title="cx-gpt6sol-medium · Lauf 20260925-221116 · 95-%-Intervall 61–100 %"><span class=cp>0,04<small>€</small></span><span class="cq">✓ 100 % · 47 s</span><span class=tag>günstigste</span></td><td class="cell" style="--heat:0.09" title="cx-gpt6sol-high · Lauf 20260925-221116 · 95-%-Intervall 61–100 %"><span class=cp>0,05<small>€</small></span><span class="cq">✓ 100 % · 54 s</span></td></tr></tbody>
+  </table></div>
+  <footer>Farbe: grün = günstig, rot = teuer (logarithmisch) · blass = zu wenig Messungen · rote Quote = unter der Mindestquote · <a href="data/overview.json">Übersicht (JSON)</a></footer>
+</section>
 <section class=board id="backend-brownfield">
   <header><h2>Backend Brownfield</h2>
   <p>Preis pro <b>gelöster</b> Aufgabe · Region EU · Stand 26.09.2026 · Mindestquote 80 %</p></header>
   <ul>
 <li class="row rec">
-  <div class=name><span class="h claude">Claude Code</span>
-    <b>claude-sonnet-5</b> <span class=eff>medium</span>
+  <div class=name><span class="h codex">Codex</span>
+    <b>gpt-6-sol</b> <span class=eff>medium</span>
     <span class=tag>Empfehlung</span></div>
   <div class=dots aria-hidden=true></div>
-  <div class=price><span class=num>0,15</span><span class=cur>€</span></div>
+  <div class=price><span class=num>0,05</span><span class=cur>€</span></div>
   <div class=meta>
     <span title="Erfolgsquote, 95-%-Intervall 44–100 %">✓ 100 % <small>(3/3)</small></span>
+    <span title="Median Laufzeit">⏱ 0,7 min</span>
+    <span title="Aufgaben pro Woche bis zum Abo-Wochenlimit (chatgpt-pro-20x)">Abo –</span>
+    
+  </div>
+</li>
+<li class="row">
+  <div class=name><span class="h codex">Codex</span>
+    <b>gpt-6-sol</b> <span class=eff>high</span>
+    </div>
+  <div class=dots aria-hidden=true></div>
+  <div class=price><span class=num>0,06</span><span class=cur>€</span></div>
+  <div class=meta>
+    <span title="Erfolgsquote, 95-%-Intervall 44–100 %">✓ 100 % <small>(3/3)</small></span>
+    <span title="Median Laufzeit">⏱ 0,7 min</span>
+    <span title="Aufgaben pro Woche bis zum Abo-Wochenlimit (chatgpt-pro-20x)">Abo –</span>
+    
+  </div>
+</li>
+<li class="row">
+  <div class=name><span class="h claude">Claude Code</span>
+    <b>claude-sonnet-5</b> <span class=eff>medium</span>
+    </div>
+  <div class=dots aria-hidden=true></div>
+  <div class=price><span class=num>0,15</span><span class=cur>€</span><span class="tr dn" title="7 % ggü. Vorlauf">▲ 7 %</span></div>
+  <div class=meta>
+    <span title="Erfolgsquote, 95-%-Intervall 44–100 %">✓ 100 % <small>(3/3)</small><span class="tr eq" title="unverändert">＝</span></span>
     <span title="Median Laufzeit">⏱ 0,1 min</span>
     <span title="Aufgaben pro Woche bis zum Abo-Wochenlimit (claude-max-20x)">Abo –</span>
     <svg class=spark viewBox="0 0 120 28" aria-hidden=true><polyline points="0.0,25.0 120.0,3.0"/></svg>
@@ -54,28 +109,54 @@ main{max-width:980px;margin:auto;padding:40px 18px 64px}
     <b>claude-opus-5-5</b> <span class=eff>medium</span>
     </div>
   <div class=dots aria-hidden=true></div>
-  <div class=price><span class=num>0,28</span><span class=cur>€</span></div>
+  <div class=price><span class=num>0,28</span><span class=cur>€</span><span class="tr eq" title="unverändert">＝</span></div>
   <div class=meta>
-    <span title="Erfolgsquote, 95-%-Intervall 44–100 %">✓ 100 % <small>(3/3)</small></span>
+    <span title="Erfolgsquote, 95-%-Intervall 44–100 %">✓ 100 % <small>(3/3)</small><span class="tr eq" title="unverändert">＝</span></span>
     <span title="Median Laufzeit">⏱ 0,2 min</span>
     <span title="Aufgaben pro Woche bis zum Abo-Wochenlimit (claude-max-20x)">Abo –</span>
     <svg class=spark viewBox="0 0 120 28" aria-hidden=true><polyline points="0.0,3.0 120.0,25.0"/></svg>
   </div>
 </li></ul>
-  <footer><a href="feeds/backend-brownfield.json">Feed (JSON)</a> · Lauf 20260926-095147 · 3 Messläufe in der Historie</footer>
+  <footer><a href="feeds/backend-brownfield.json">Feed (JSON)</a> · jüngster Lauf 20260926-095147 · 3 Messläufe in der Historie</footer>
 </section>
 <section class=board id="backend-greenfield">
   <header><h2>Backend Greenfield</h2>
   <p>Preis pro <b>gelöster</b> Aufgabe · Region EU · Stand 26.09.2026 · Mindestquote 80 %</p></header>
   <ul>
 <li class="row rec">
-  <div class=name><span class="h claude">Claude Code</span>
-    <b>claude-sonnet-5</b> <span class=eff>medium</span>
+  <div class=name><span class="h codex">Codex</span>
+    <b>gpt-6-sol</b> <span class=eff>medium</span>
     <span class=tag>Empfehlung</span></div>
   <div class=dots aria-hidden=true></div>
-  <div class=price><span class=num>0,17</span><span class=cur>€</span></div>
+  <div class=price><span class=num>0,04</span><span class=cur>€</span></div>
   <div class=meta>
     <span title="Erfolgsquote, 95-%-Intervall 44–100 %">✓ 100 % <small>(3/3)</small></span>
+    <span title="Median Laufzeit">⏱ 0,8 min</span>
+    <span title="Aufgaben pro Woche bis zum Abo-Wochenlimit (chatgpt-pro-20x)">Abo –</span>
+    
+  </div>
+</li>
+<li class="row">
+  <div class=name><span class="h codex">Codex</span>
+    <b>gpt-6-sol</b> <span class=eff>high</span>
+    </div>
+  <div class=dots aria-hidden=true></div>
+  <div class=price><span class=num>0,04</span><span class=cur>€</span></div>
+  <div class=meta>
+    <span title="Erfolgsquote, 95-%-Intervall 44–100 %">✓ 100 % <small>(3/3)</small></span>
+    <span title="Median Laufzeit">⏱ 0,9 min</span>
+    <span title="Aufgaben pro Woche bis zum Abo-Wochenlimit (chatgpt-pro-20x)">Abo –</span>
+    
+  </div>
+</li>
+<li class="row">
+  <div class=name><span class="h claude">Claude Code</span>
+    <b>claude-sonnet-5</b> <span class=eff>medium</span>
+    </div>
+  <div class=dots aria-hidden=true></div>
+  <div class=price><span class=num>0,17</span><span class=cur>€</span><span class="tr dn" title="4 % ggü. Vorlauf">▲ 4 %</span></div>
+  <div class=meta>
+    <span title="Erfolgsquote, 95-%-Intervall 44–100 %">✓ 100 % <small>(3/3)</small><span class="tr eq" title="unverändert">＝</span></span>
     <span title="Median Laufzeit">⏱ 0,2 min</span>
     <span title="Aufgaben pro Woche bis zum Abo-Wochenlimit (claude-max-20x)">Abo –</span>
     <svg class=spark viewBox="0 0 120 28" aria-hidden=true><polyline points="0.0,25.0 120.0,3.0"/></svg>
@@ -86,15 +167,15 @@ main{max-width:980px;margin:auto;padding:40px 18px 64px}
     <b>claude-opus-5-5</b> <span class=eff>medium</span>
     </div>
   <div class=dots aria-hidden=true></div>
-  <div class=price><span class=num>0,31</span><span class=cur>€</span></div>
+  <div class=price><span class=num>0,31</span><span class=cur>€</span><span class="tr up" title="-5 % ggü. Vorlauf">▼ 5 %</span></div>
   <div class=meta>
-    <span title="Erfolgsquote, 95-%-Intervall 44–100 %">✓ 100 % <small>(3/3)</small></span>
+    <span title="Erfolgsquote, 95-%-Intervall 44–100 %">✓ 100 % <small>(3/3)</small><span class="tr eq" title="unverändert">＝</span></span>
     <span title="Median Laufzeit">⏱ 0,3 min</span>
     <span title="Aufgaben pro Woche bis zum Abo-Wochenlimit (claude-max-20x)">Abo –</span>
     <svg class=spark viewBox="0 0 120 28" aria-hidden=true><polyline points="0.0,3.0 120.0,25.0"/></svg>
   </div>
 </li></ul>
-  <footer><a href="feeds/backend-greenfield.json">Feed (JSON)</a> · Lauf 20260926-095147 · 3 Messläufe in der Historie</footer>
+  <footer><a href="feeds/backend-greenfield.json">Feed (JSON)</a> · jüngster Lauf 20260926-095147 · 3 Messläufe in der Historie</footer>
 </section>
 <div class=note>
 <h3>Wie die Preise entstehen</h3>

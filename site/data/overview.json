@@ -1,0 +1,78 @@
+{
+  "cc-opus55-medium": {
+    "harness": "claude",
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.29563666666666666,
+    "median_wall_s": 18.2,
+    "enough_data": true,
+    "run_id": "20260926-095147",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cc-sonnet5-medium": {
+    "harness": "claude",
+    "model": "claude-sonnet-5",
+    "effort": "medium",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.16155083333333334,
+    "median_wall_s": 13.4,
+    "enough_data": true,
+    "run_id": "20260926-095147",
+    "date": "26.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cx-gpt6sol-high": {
+    "harness": "codex",
+    "model": "gpt-6-sol",
+    "effort": "high",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.0497565,
+    "median_wall_s": 54.3,
+    "enough_data": true,
+    "run_id": "20260925-221116",
+    "date": "25.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  },
+  "cx-gpt6sol-medium": {
+    "harness": "codex",
+    "model": "gpt-6-sol",
+    "effort": "medium",
+    "n": 6,
+    "passed": 6,
+    "pass_rate": 1.0,
+    "ci": [
+      0.6096569663469354,
+      0.9999999999999999
+    ],
+    "cost_per_solved": 0.0420125,
+    "median_wall_s": 46.9,
+    "enough_data": true,
+    "run_id": "20260925-221116",
+    "date": "25.09.2026",
+    "quality_floor": 0.8,
+    "currency": "EUR"
+  }
+}

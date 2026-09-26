@@ -81,6 +81,83 @@ def aggregate(reports: list[dict], min_n: int) -> dict:
     return dict(hist)
 
 
+MODEL_ORDER = ["claude-fable-5-1", "claude-opus-5-5", "claude-sonnet-5", "claude-haiku-4-5",
+               "gpt-6-astra", "gpt-6-sol", "gpt-6-luna"]
+EFFORTS = ["low", "medium", "high"]
+
+
+def overview(reports: list[dict], min_n: int) -> dict:
+    """Je Konfiguration die neueste Messung über alle Aufgaben hinweg (Grundlage der Gesamtübersicht)."""
+    cells: dict[str, dict] = {}
+    for rep in sorted(reports, key=lambda r: r["run_id"]):
+        by = defaultdict(list)
+        for t in rep["trials"]:
+            if t.get("status") not in ("rate_limited", "error"):
+                by[t["config"]].append(t)
+        rows = {r["config"]: r for r in rep["configs"]}
+        m = re.match(r"(\d{4})(\d{2})(\d{2})", rep["run_id"])
+        date = f"{m.group(3)}.{m.group(2)}.{m.group(1)}" if m else ""
+        for cid, ts in by.items():
+            k, n = sum(bool(t.get("passed")) for t in ts), len(ts)
+            p, lo, hi = wilson(k, n)
+            costs = [t["cost"] for t in ts if t.get("cost") is not None]
+            row = rows.get(cid, {})
+            cells[cid] = {"harness": row.get("harness") or ts[0].get("harness"), "model": row.get("model") or ts[0].get("model"),
+                          "effort": row.get("effort") or ts[0].get("effort"), "n": n, "passed": k, "pass_rate": p, "ci": [lo, hi],
+                          "cost_per_solved": (sum(costs) / k) if (costs and k) else None,
+                          "median_wall_s": sorted(t.get("wall_s") or 0 for t in ts)[n // 2],
+                          "enough_data": n >= min_n, "run_id": rep["run_id"], "date": date,
+                          "quality_floor": rep.get("quality_floor", 0.8), "currency": rep.get("currency", "EUR")}
+    return cells
+
+
+def overview_board(cells: dict) -> str:
+    if not cells:
+        return ""
+    ok = [c for c, v in cells.items() if v["cost_per_solved"] is not None and v["enough_data"]
+          and v["pass_rate"] >= v["quality_floor"]]
+    best = min(ok, key=lambda c: cells[c]["cost_per_solved"]) if ok else None
+    prices = [v["cost_per_solved"] for v in cells.values() if v["cost_per_solved"]]
+    lo, hi = (math.log(min(prices)), math.log(max(prices))) if prices else (0, 1)
+    sym = SYM.get(next(iter(cells.values()))["currency"], "")
+    by_model = defaultdict(dict)
+    for cid, v in cells.items():
+        by_model[v["model"]][v["effort"]] = (cid, v)
+    models = sorted(by_model, key=lambda m: (MODEL_ORDER.index(m) if m in MODEL_ORDER else 99, m))
+    rows = []
+    for mdl in models:
+        harness = next(iter(by_model[mdl].values()))[1]["harness"]
+        tds = []
+        for eff in EFFORTS:
+            cid, v = by_model[mdl].get(eff, (None, None))
+            if not v:
+                tds.append('<td class="cell none">–</td>')
+                continue
+            c = v["cost_per_solved"]
+            heat = 0.5 if c is None or hi == lo else (math.log(c) - lo) / (hi - lo)
+            cls = "cell" + (" best" if cid == best else "") + ("" if v["enough_data"] else " thin")
+            fail = "" if v["pass_rate"] >= v["quality_floor"] else " low"
+            tds.append(
+                f'<td class="{cls}" style="--heat:{heat:.2f}" title="{html.escape(cid)} · Lauf {html.escape(v["run_id"])} · '
+                f'95-%-Intervall {de(v["ci"][0] * 100, 0)}–{de(v["ci"][1] * 100, 0)} %">'
+                f'<span class=cp>{de(c) if c is not None else "–"}<small>{sym}</small></span>'
+                f'<span class="cq{fail}">✓ {de(v["pass_rate"] * 100, 0)} % · {de(v["median_wall_s"], 0)} s</span>'
+                f'{"<span class=tag>günstigste</span>" if cid == best else ""}</td>')
+        rows.append(f'<tr><th scope=row><span class="h {harness}">{"Claude Code" if harness == "claude" else "Codex"}</span>'
+                    f'<b>{html.escape(mdl)}</b></th>{"".join(tds)}</tr>')
+    dates = sorted({v["date"] for v in cells.values() if v["date"]}, key=lambda d: d[6:] + d[3:5] + d[:2])
+    return f"""
+<section class="board overview" id=uebersicht>
+  <header><h2>Alle Modelle auf einen Blick</h2>
+  <p>Preis pro <b>gelöster</b> Aufgabe über alle Aufgaben · Erfolgsquote · Median-Laufzeit · je Konfiguration die neueste Messung ({html.escape(dates[0])}{' bis ' + html.escape(dates[-1]) if len(dates) > 1 else ''})</p></header>
+  <div class=scroll><table>
+    <thead><tr><th>Modell</th>{''.join(f'<th>{e}</th>' for e in EFFORTS)}</tr></thead>
+    <tbody>{''.join(rows)}</tbody>
+  </table></div>
+  <footer>Farbe: grün = günstig, rot = teuer (logarithmisch) · blass = zu wenig Messungen · rote Quote = unter der Mindestquote · <a href="data/overview.json">Übersicht (JSON)</a></footer>
+</section>"""
+
+
 def trend(cur, prev, key, better_low=True):
     if not prev or cur.get(key) is None or prev.get(key) is None or prev[key] == 0:
         return ""
@@ -103,16 +180,31 @@ def spark(points: list[float | None], w=120, h=28) -> str:
     return f'<svg class=spark viewBox="0 0 {w} {h}" aria-hidden=true><polyline points="{" ".join(pts)}"/></svg>'
 
 
+def latest_cells(runs: list[dict]) -> tuple[dict, dict]:
+    """Je Konfiguration die neueste und die davor liegende Messung (Läufe messen nicht immer alle Konfigurationen)."""
+    cur, prev = {}, {}
+    for r in runs:
+        for cid, c in r["cells"].items():
+            if cid in cur:
+                prev[cid] = cur[cid]
+            cur[cid] = c
+    return cur, prev
+
+
 def board(cohort: str, runs: list[dict]) -> str:
-    cur, prev = runs[-1], (runs[-2] if len(runs) > 1 else None)
-    sym = SYM.get(cur["currency"], cur["currency"])
-    rows = sorted(cur["cells"].items(), key=lambda kv: (not kv[1]["enough_data"], kv[1]["cost_per_solved"] is None,
-                                                        kv[1]["cost_per_solved"] or 0))
+    last = runs[-1]
+    cells, prevs = latest_cells(runs)
+    sym = SYM.get(last["currency"], last["currency"])
+    floor = last["quality_floor"]
+    ok = [c for c, v in cells.items() if v["pass_rate"] >= floor and v["cost_per_solved"] is not None and v["enough_data"]]
+    recommendation = min(ok, key=lambda c: cells[c]["cost_per_solved"]) if ok else None
+    rows = sorted(cells.items(), key=lambda kv: (not kv[1]["enough_data"], kv[1]["cost_per_solved"] is None,
+                                                 kv[1]["cost_per_solved"] or 0))
     lines = []
     for cid, c in rows:
-        p = (prev or {}).get("cells", {}).get(cid)
-        rec = cid == cur["recommendation"]
-        hist_pts = [r["cells"].get(cid, {}).get("cost_per_solved") for r in runs]
+        p = prevs.get(cid)
+        rec = cid == recommendation
+        hist_pts = [r["cells"][cid].get("cost_per_solved") for r in runs if cid in r["cells"]]
         abo = f"≈ {de(c['tasks_per_week_at_limit'], 0)} / Woche" if c["tasks_per_week_at_limit"] else "–"
         lines.append(f"""
 <li class="row{' rec' if rec else ''}{' thin' if not c['enough_data'] else ''}">
@@ -132,18 +224,19 @@ def board(cohort: str, runs: list[dict]) -> str:
     return f"""
 <section class=board id="{html.escape(cohort)}">
   <header><h2>{html.escape(title)}</h2>
-  <p>Preis pro <b>gelöster</b> Aufgabe · Region {html.escape(cur['region'].upper())} · Stand {html.escape(cur['date'])} · Mindestquote {de(cur['quality_floor'] * 100, 0)} %</p></header>
+  <p>Preis pro <b>gelöster</b> Aufgabe · Region {html.escape(last['region'].upper())} · Stand {html.escape(last['date'])} · Mindestquote {de(floor * 100, 0)} %</p></header>
   <ul>{''.join(lines)}</ul>
-  <footer><a href="feeds/{html.escape(cohort)}.json">Feed (JSON)</a> · Lauf {html.escape(cur['run_id'])} · {len(runs)} Messläufe in der Historie</footer>
+  <footer><a href="feeds/{html.escape(cohort)}.json">Feed (JSON)</a> · jüngster Lauf {html.escape(last['run_id'])} · {len(runs)} Messläufe in der Historie</footer>
 </section>"""
 
 
-def render(hist: dict, title: str, subtitle: str, repo_url: str | None, skill_ok: bool = False) -> str:
-    boards = "".join(board(c, r) for c, r in sorted(hist.items()))
+def render(hist: dict, title: str, subtitle: str, repo_url: str | None, skill_ok: bool = False,
+           overview_cells: dict | None = None) -> str:
+    boards = overview_board(overview_cells or {}) + "".join(board(c, r) for c, r in sorted(hist.items()))
     latest_run = max(hist.values(), key=lambda r: r[-1]["run_id"])[-1] if hist else None
     latest = latest_run["date"] if latest_run else "–"
     commit = next((r[-1].get("prices_commit") for r in hist.values() if r[-1].get("prices_commit")), None)
-    nav = " · ".join(f'<a href="#{html.escape(c)}">{html.escape(c.replace("-", " ").title())}</a>' for c in sorted(hist))
+    nav = ('<a href="#uebersicht">Übersicht</a> · ' if overview_cells else "") + " · ".join(f'<a href="#{html.escape(c)}">{html.escape(c.replace("-", " ").title())}</a>' for c in sorted(hist))
     skill_link = '<a href="herdr-bench.skill">Skill herunterladen</a> · ' if skill_ok else ""
     repo = f' · <a href="{html.escape(repo_url)}">Quellcode & Rohdaten</a>' if repo_url else ""
     return f"""<!doctype html><html lang=de><head><meta charset=utf-8>
@@ -175,7 +268,27 @@ main{{max-width:980px;margin:auto;padding:40px 18px 64px}}
 .spark{{width:120px;height:28px}} .spark polyline{{fill:none;stroke:var(--gold);stroke-width:1.6}}
 .board footer{{margin-top:12px;font-size:12.5px;color:var(--dim)}}
 .note{{font-size:14px;color:var(--mut);max-width:70ch}} .note h3{{color:var(--ink);font-size:16px;margin:28px 0 6px}}
-@media (max-width:560px){{.row{{grid-template-columns:1fr auto}} .dots{{display:none}} .num{{font-size:24px}}}}
+.overview .scroll{{overflow-x:auto;-webkit-overflow-scrolling:touch}}
+.overview table{{width:100%;border-collapse:separate;border-spacing:6px;min-width:520px;table-layout:fixed}}
+.overview thead th:first-child{{width:28%}}
+.overview thead th{{color:var(--dim);font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;text-align:center}}
+.overview thead th:first-child{{text-align:left}}
+.overview tbody th{{text-align:left;font-weight:400;font-size:15px;white-space:nowrap;padding-right:6px}} .overview tbody th b{{font-weight:650}}
+.overview tbody th .h{{display:inline-block;margin-bottom:3px}} .overview tbody th b{{display:block}}
+.cell{{--c:color-mix(in oklab,var(--good) calc((1 - var(--heat)) * 100%),var(--bad));text-align:center;padding:10px 6px;border-radius:10px;
+  background:color-mix(in oklab,var(--c) 22%,transparent);border:1px solid color-mix(in oklab,var(--c) 45%,transparent);position:relative}}
+.cell.none{{background:transparent;border:1px dashed rgba(243,239,228,.18);color:var(--dim)}}
+.cell.thin{{opacity:.55}} .cell.best{{box-shadow:0 0 0 2px var(--gold)}}
+.cp{{display:block;font:700 22px/1.1 ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}} .cp small{{font-size:13px;margin-left:3px;color:var(--dim)}}
+.cq{{display:block;font-size:12px;color:var(--dim);margin-top:3px}} .cq.low{{color:var(--bad)}}
+.cell .tag{{position:absolute;top:-9px;right:-4px;margin:0;font-size:10px;padding:1px 6px}}
+@media (max-width:560px){{
+  .overview table,.overview thead,.overview tbody{{display:block;min-width:0}}
+  .overview thead tr,.overview tbody tr{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}}
+  .overview thead th:first-child{{display:none}} .overview tbody tr{{margin-bottom:10px}}
+  .overview tbody th{{grid-column:1/-1;display:flex;align-items:baseline;gap:6px;padding:6px 0 0}} .overview tbody th b{{display:inline}}
+  .cq{{font-size:11px}} .cell{{padding:8px 4px}}
+  .cp{{font-size:18px}}.row{{grid-template-columns:1fr auto}} .dots{{display:none}} .num{{font-size:24px}}}}
 </style></head><body><main>
 <div class=hero><h1>{html.escape(title)}</h1><p>{html.escape(subtitle)}. Stand {html.escape(latest)}.</p></div>
 <nav>{nav}</nav>
@@ -209,8 +322,10 @@ def main() -> int:
                 "region": cur["region"], "currency": cur["currency"], "recommendation": cur["recommendation"],
                 "quality_floor": cur["quality_floor"], "configs": cur["cells"]}
         (out / "feeds" / f"{cohort}.json").write_text(json.dumps(feed, indent=2, ensure_ascii=False))
+    ov = overview(reports, a.min_n)
     (out / "data" / "history.json").write_text(json.dumps(hist, indent=2, ensure_ascii=False))
-    (out / "index.html").write_text(render(hist, a.title, a.subtitle, a.repo_url))
+    (out / "data" / "overview.json").write_text(json.dumps(ov, indent=2, ensure_ascii=False))
+    (out / "index.html").write_text(render(hist, a.title, a.subtitle, a.repo_url, overview_cells=ov))
     (out / ".nojekyll").write_text("")
     print(f"{out / 'index.html'}  ({len(hist)} Kohorten, {len(reports)} Läufe)")
     return 0

@@ -3,10 +3,52 @@
   "currency": "EUR",
   "fx_usd_to_local": 0.8769622029290537,
   "fx_source": "EZB 2026-09-25",
-  "fetched_at": "2026-09-26T07:51:48+00:00",
+  "fetched_at": "2026-09-26T11:00:21+00:00",
   "source": "https://raw.githubusercontent.com/BerriAI/litellm/4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d/model_prices_and_context_window.json",
   "source_commit": "4d7aa89fa3b975eb729b5fc6fcfdca36c97cb64d",
   "models": {
+    "claude-fable-5-1": {
+      "price_key": "eu.anthropic.claude-fable-5-1",
+      "multiplier": 1.0,
+      "note": "Claude über Bedrock EU-Profil (Anthropic-API selbst hat kein EU-Geo)",
+      "override": false,
+      "override_source": null,
+      "usd_per_mtok": {
+        "input": 11.0,
+        "output": 55.0,
+        "cache_read": 0.275,
+        "cache_write_5m": 13.75,
+        "cache_write_1h": 22.0
+      },
+      "local_per_mtok": {
+        "input": 9.646584,
+        "output": 48.232921,
+        "cache_read": 0.241165,
+        "cache_write_5m": 12.05823,
+        "cache_write_1h": 19.293168
+      }
+    },
+    "claude-haiku-4-5": {
+      "price_key": "claude-haiku-4-5",
+      "multiplier": 1.1,
+      "note": "Claude über Bedrock EU-Profil (Anthropic-API selbst hat kein EU-Geo) (Fallback)",
+      "override": false,
+      "override_source": null,
+      "usd_per_mtok": {
+        "input": 1.1,
+        "output": 5.5,
+        "cache_read": 0.11,
+        "cache_write_5m": 1.375,
+        "cache_write_1h": 2.2
+      },
+      "local_per_mtok": {
+        "input": 0.964658,
+        "output": 4.823292,
+        "cache_read": 0.096466,
+        "cache_write_5m": 1.205823,
+        "cache_write_1h": 1.929317
+      }
+    },
     "claude-opus-5-5": {
       "price_key": "eu.anthropic.claude-opus-5-5",
       "multiplier": 1.0,
@@ -47,6 +89,48 @@
         "cache_read": 0.192932,
         "cache_write_5m": 2.411646,
         "cache_write_1h": 3.858634
+      }
+    },
+    "gpt-6-astra": {
+      "price_key": "gpt-6-astra",
+      "multiplier": 1.1,
+      "note": "OpenAI regional processing EU",
+      "override": false,
+      "override_source": null,
+      "usd_per_mtok": {
+        "input": 11.0,
+        "output": 55.0,
+        "cache_read": 1.1,
+        "cache_write_5m": 13.75,
+        "cache_write_1h": null
+      },
+      "local_per_mtok": {
+        "input": 9.646584,
+        "output": 48.232921,
+        "cache_read": 0.964658,
+        "cache_write_5m": 12.05823,
+        "cache_write_1h": null
+      }
+    },
+    "gpt-6-luna": {
+      "price_key": "gpt-6-luna",
+      "multiplier": 1.1,
+      "note": "OpenAI regional processing EU",
+      "override": false,
+      "override_source": null,
+      "usd_per_mtok": {
+        "input": 0.11,
+        "output": 0.55,
+        "cache_read": 0.011,
+        "cache_write_5m": 0.1375,
+        "cache_write_1h": null
+      },
+      "local_per_mtok": {
+        "input": 0.096466,
+        "output": 0.482329,
+        "cache_read": 0.009647,
+        "cache_write_5m": 0.120582,
+        "cache_write_1h": null
       }
     },
     "gpt-6-sol": {

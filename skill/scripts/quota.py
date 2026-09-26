@@ -46,20 +46,21 @@ def parse_screen(text: str) -> dict:
         m = PCT.search(line)
         if not m:
             continue
-        label = line[: m.start()].strip(" :[]█░▏▎▍▌▋▊▉■□-|")
+        label = line[: m.start()].strip(" :[]█░▏▎▍▌▋▊▉■□-|│╭╮╰╯─")
         if not label and i > 0:  # Balken in eigener Zeile unter der Überschrift
-            label = lines[i - 1].strip()
+            label = lines[i - 1].strip(" │╭╮╰╯─")
         kind = classify(label)
         if kind == "other" and not re.search(r"limit|session|week|usage", label, re.I):
             continue  # z. B. Kontextanzeige "ctx 3%"
         val = float(m.group(1).replace(",", "."))
         used = 100 - val if (m.group(2) or "").lower() in ("left", "remaining", "übrig") else val
         reset = None
-        tail = " ".join(lines[i:i + 2])
+        tail = " ".join(l.strip(" │") for l in lines[i:i + 2])
         r = RESET.search(tail)
         if r:
-            reset = r.group(1).strip()[:60]
-        key = kind if kind not in windows else f"{kind}_{i}"
+            reset = re.split(r"[)│]", r.group(1))[0].strip()[:60]
+        # Weitere Fenster gleichen Typs nach Namen schlüsseln (stabil über Bildschirme hinweg)
+        key = kind if kind not in windows else f"{kind}_" + "_".join(re.findall(r"[a-z0-9]+", label.lower()))[:40]
         windows[key] = {"label": label[:60], "used_pct": used, "resets": reset}
     return {"windows": windows, "limit_hit": bool(LIMIT_HIT.search(text)), "raw": text[-4000:]}
 

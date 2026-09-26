@@ -5,8 +5,8 @@
   "date": "26.09.2026",
   "region": "eu",
   "currency": "EUR",
-  "recommendation": "cc-sonnet5-medium",
   "quality_floor": 0.8,
+  "recommendation": "cx-gpt6sol-medium",
   "configs": {
     "cc-opus55-medium": {
       "harness": "claude",
@@ -42,6 +42,44 @@
       "cost_per_solved": 0.15408566666666668,
       "mean_cost": 0.15408566666666668,
       "median_wall_s": 6.9,
+      "week_pct_per_task": 0.0,
+      "tasks_per_week_at_limit": null,
+      "enough_data": true
+    },
+    "cx-gpt6sol-high": {
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "high",
+      "plan": "chatgpt-pro-20x",
+      "n": 3,
+      "passed": 3,
+      "pass_rate": 1.0,
+      "ci": [
+        0.43849391955098227,
+        1.0
+      ],
+      "cost_per_solved": 0.05796166666666667,
+      "mean_cost": 0.05796166666666667,
+      "median_wall_s": 40.6,
+      "week_pct_per_task": 0.0,
+      "tasks_per_week_at_limit": null,
+      "enough_data": true
+    },
+    "cx-gpt6sol-medium": {
+      "harness": "codex",
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "plan": "chatgpt-pro-20x",
+      "n": 3,
+      "passed": 3,
+      "pass_rate": 1.0,
+      "ci": [
+        0.43849391955098227,
+        1.0
+      ],
+      "cost_per_solved": 0.04675866666666667,
+      "mean_cost": 0.04675866666666667,
+      "median_wall_s": 40.8,
       "week_pct_per_task": 0.0,
       "tasks_per_week_at_limit": null,
       "enough_data": true

@@ -1,0 +1,14 @@
+╭────────────────────────────────────────────────────────────────────────────────────────╮
+│  >_ OpenAI Codex (v0.157.0)                                                            │
+│                                                                                        │
+│ Visit https://chatgpt.com/codex/settings/usage for up-to-date                          │
+│ information on rate limits and credits                                                 │
+│                                                                                        │
+│  Model:            gpt-6-sol (reasoning medium)                                        │
+│  Account:          user@example.com (Pro)                                              │
+│  Context window:   9% used                                                             │
+│                                                                                        │
+│  Weekly limit:     [██████████████████░░░░░░] 76% used (resets 09:20 on 30 Sep)        │
+│  Luna Reserve Weekly limit: [░░░░░░░░░░░░░░░░░░░░░░░░] 0% used (resets 10:04 on 3 Oct) │
+│  Credits:          0                                                                   │
+╰────────────────────────────────────────────────────────────────────────────────────────╯
