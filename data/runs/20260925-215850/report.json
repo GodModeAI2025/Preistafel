@@ -1,0 +1,416 @@
+{
+  "run_id": "20260925-215850",
+  "region": "eu",
+  "currency": "EUR",
+  "fx": 0.8769622029290537,
+  "prices_source": "https://raw.githubusercontent.com/BerriAI/litellm/e106dbd8ba9b22317cac4d7d3fb6036777a70cd7/model_prices_and_context_window.json",
+  "prices_commit": "e106dbd8ba9b22317cac4d7d3fb6036777a70cd7",
+  "prices_fetched": "2026-09-25T19:58:27+00:00",
+  "quota_mode": "block",
+  "quality_floor": 0.8,
+  "recommendation": "cc-sonnet5-medium",
+  "configs": [
+    {
+      "config": "cc-sonnet5-medium",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.1537125,
+      "cost_per_solved": 0.1537125,
+      "median_tokens": 157477.5,
+      "median_wall_s": 9.8,
+      "week_pct_per_task": 0.2,
+      "five_hour_pct_per_task": 0.0,
+      "tasks_per_week_at_limit": 500.0,
+      "abo_cost_per_task": 0.0809503571934511,
+      "break_even_tasks_per_week": 263.31741788550414,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    },
+    {
+      "config": "cc-opus55-medium",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "n": 6,
+      "passed": 6,
+      "pass_rate": 1.0,
+      "ci": [
+        0.6096569663469354,
+        0.9999999999999999
+      ],
+      "mean_cost": 0.3068441666666667,
+      "cost_per_solved": 0.30684416666666664,
+      "median_tokens": 161041.0,
+      "median_wall_s": 17.3,
+      "week_pct_per_task": 0.0,
+      "five_hour_pct_per_task": 0.16666666666666666,
+      "tasks_per_week_at_limit": null,
+      "abo_cost_per_task": null,
+      "break_even_tasks_per_week": 131.907929149896,
+      "blocked": 0,
+      "timeouts": 0,
+      "confidence": "vorläufig"
+    }
+  ],
+  "excluded": {
+    "rate_limited": 0,
+    "error": 0
+  },
+  "trials": [
+    {
+      "trial_id": "cc-opus55-medium__py-bugfix-workdays__r1",
+      "config": "cc-opus55-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.282079,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 127749,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30810,
+        "output": 1018,
+        "reasoning_output": 0
+      },
+      "wall_s": 11.2,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-medium__py-bugfix-workdays__r2",
+      "config": "cc-opus55-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.303355,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 8,
+        "cache_read": 183326,
+        "cache_write_5m": 0,
+        "cache_write_1h": 31224,
+        "output": 1399,
+        "reasoning_output": 0
+      },
+      "wall_s": 14.3,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-medium__py-bugfix-workdays__r3",
+      "config": "cc-opus55-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.279899,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 126086,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30749,
+        "output": 946,
+        "reasoning_output": 0
+      },
+      "wall_s": 10.7,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-medium__py-feature-slugify__r1",
+      "config": "cc-opus55-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.348251,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 10,
+        "cache_read": 241650,
+        "cache_write_5m": 0,
+        "cache_write_1h": 32595,
+        "output": 2594,
+        "reasoning_output": 0
+      },
+      "wall_s": 25.1,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-medium__py-feature-slugify__r2",
+      "config": "cc-opus55-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.317258,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 126084,
+        "cache_write_5m": 0,
+        "cache_write_1h": 32075,
+        "output": 2352,
+        "reasoning_output": 0
+      },
+      "wall_s": 22.1,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-opus55-medium__py-feature-slugify__r3",
+      "config": "cc-opus55-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.310223,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 127683,
+        "cache_write_5m": 0,
+        "cache_write_1h": 31791,
+        "output": 2085,
+        "reasoning_output": 0
+      },
+      "wall_s": 20.3,
+      "share": {
+        "five_hour": 0.16666666666666666,
+        "week": 0.0,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-medium__py-bugfix-workdays__r1",
+      "config": "cc-sonnet5-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.142932,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 131034,
+        "cache_write_5m": 0,
+        "cache_write_1h": 29015,
+        "output": 589,
+        "reasoning_output": 0
+      },
+      "wall_s": 6.7,
+      "share": {}
+    },
+    {
+      "trial_id": "cc-sonnet5-medium__py-bugfix-workdays__r2",
+      "config": "cc-sonnet5-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.146592,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 122701,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30275,
+        "output": 631,
+        "reasoning_output": 0
+      },
+      "wall_s": 7.2,
+      "share": {
+        "five_hour": 0.0,
+        "week": 0.2,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-medium__py-bugfix-workdays__r3",
+      "config": "cc-sonnet5-medium",
+      "task": "py-bugfix-workdays",
+      "cohort": "backend-brownfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.144233,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 126258,
+        "cache_write_5m": 0,
+        "cache_write_1h": 29596,
+        "output": 587,
+        "reasoning_output": 0
+      },
+      "wall_s": 7.0,
+      "share": {
+        "five_hour": 0.0,
+        "week": 0.2,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-medium__py-feature-slugify__r1",
+      "config": "cc-sonnet5-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 1,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.154169,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 6,
+        "cache_read": 126914,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30243,
+        "output": 1345,
+        "reasoning_output": 0
+      },
+      "wall_s": 12.4,
+      "share": {
+        "five_hour": 0.0,
+        "week": 0.2,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-medium__py-feature-slugify__r2",
+      "config": "cc-sonnet5-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 2,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.146275,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 4,
+        "cache_read": 77809,
+        "cache_write_5m": 0,
+        "cache_write_1h": 29991,
+        "output": 1610,
+        "reasoning_output": 0
+      },
+      "wall_s": 12.9,
+      "share": {
+        "five_hour": 0.0,
+        "week": 0.2,
+        "week_fable": 0.0
+      }
+    },
+    {
+      "trial_id": "cc-sonnet5-medium__py-feature-slugify__r3",
+      "config": "cc-sonnet5-medium",
+      "task": "py-feature-slugify",
+      "cohort": "backend-greenfield",
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "rep": 3,
+      "status": "completed",
+      "passed": true,
+      "cost": 0.188074,
+      "cost_missing": [],
+      "tokens": {
+        "input_uncached": 12,
+        "cache_read": 290993,
+        "cache_write_5m": 0,
+        "cache_write_1h": 30598,
+        "output": 1435,
+        "reasoning_output": 0
+      },
+      "wall_s": 14.9,
+      "share": {
+        "five_hour": 0.0,
+        "week": 0.2,
+        "week_fable": 0.0
+      }
+    }
+  ]
+}

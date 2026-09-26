@@ -1,0 +1,104 @@
+{
+  "backend-brownfield": [
+    {
+      "run_id": "20260925-215850",
+      "date": "25.09.2026",
+      "region": "eu",
+      "currency": "EUR",
+      "quality_floor": 0.8,
+      "prices_commit": "e106dbd8ba9b22317cac4d7d3fb6036777a70cd7",
+      "recommendation": "cc-sonnet5-medium",
+      "cells": {
+        "cc-opus55-medium": {
+          "harness": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "medium",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.28844433333333336,
+          "mean_cost": 0.28844433333333336,
+          "median_wall_s": 11.2,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cc-sonnet5-medium": {
+          "harness": "claude",
+          "model": "claude-sonnet-5",
+          "effort": "medium",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.14458566666666667,
+          "mean_cost": 0.14458566666666667,
+          "median_wall_s": 7.0,
+          "week_pct_per_task": 0.2,
+          "tasks_per_week_at_limit": 500.0,
+          "enough_data": true
+        }
+      }
+    }
+  ],
+  "backend-greenfield": [
+    {
+      "run_id": "20260925-215850",
+      "date": "25.09.2026",
+      "region": "eu",
+      "currency": "EUR",
+      "quality_floor": 0.8,
+      "prices_commit": "e106dbd8ba9b22317cac4d7d3fb6036777a70cd7",
+      "recommendation": "cc-sonnet5-medium",
+      "cells": {
+        "cc-opus55-medium": {
+          "harness": "claude",
+          "model": "claude-opus-5-5",
+          "effort": "medium",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.32524400000000003,
+          "mean_cost": 0.32524400000000003,
+          "median_wall_s": 22.1,
+          "week_pct_per_task": 0.0,
+          "tasks_per_week_at_limit": null,
+          "enough_data": true
+        },
+        "cc-sonnet5-medium": {
+          "harness": "claude",
+          "model": "claude-sonnet-5",
+          "effort": "medium",
+          "plan": "claude-max-20x",
+          "n": 3,
+          "passed": 3,
+          "pass_rate": 1.0,
+          "ci": [
+            0.43849391955098227,
+            1.0
+          ],
+          "cost_per_solved": 0.16283933333333334,
+          "mean_cost": 0.16283933333333334,
+          "median_wall_s": 12.9,
+          "week_pct_per_task": 0.20000000000000004,
+          "tasks_per_week_at_limit": 499.9999999999999,
+          "enough_data": true
+        }
+      }
+    }
+  ]
+}

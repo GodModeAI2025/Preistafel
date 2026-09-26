@@ -1,0 +1,50 @@
+{
+  "feed_version": "1.0",
+  "cohort": "backend-brownfield",
+  "run_id": "20260925-215850",
+  "date": "25.09.2026",
+  "region": "eu",
+  "currency": "EUR",
+  "recommendation": "cc-sonnet5-medium",
+  "quality_floor": 0.8,
+  "configs": {
+    "cc-opus55-medium": {
+      "harness": "claude",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "n": 3,
+      "passed": 3,
+      "pass_rate": 1.0,
+      "ci": [
+        0.43849391955098227,
+        1.0
+      ],
+      "cost_per_solved": 0.28844433333333336,
+      "mean_cost": 0.28844433333333336,
+      "median_wall_s": 11.2,
+      "week_pct_per_task": 0.0,
+      "tasks_per_week_at_limit": null,
+      "enough_data": true
+    },
+    "cc-sonnet5-medium": {
+      "harness": "claude",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "plan": "claude-max-20x",
+      "n": 3,
+      "passed": 3,
+      "pass_rate": 1.0,
+      "ci": [
+        0.43849391955098227,
+        1.0
+      ],
+      "cost_per_solved": 0.14458566666666667,
+      "mean_cost": 0.14458566666666667,
+      "median_wall_s": 7.0,
+      "week_pct_per_task": 0.2,
+      "tasks_per_week_at_limit": 500.0,
+      "enough_data": true
+    }
+  }
+}
