@@ -299,6 +299,7 @@ main{{max-width:980px;margin:auto;padding:40px 18px 64px}}
 <p>Preise aus LiteLLM{(' (Commit ' + html.escape(commit[:10]) + ')') if commit else ''}, stichprobenartig mit den offiziellen Preisseiten abgeglichen. Kleine Stichproben schwanken; blasse Zeilen haben zu wenig Messungen.</p>
 <p>{skill_link}<a href="data/history.json">Messhistorie (JSON)</a>{repo}</p>
 </div>
+<footer style="margin-top:24px"><a href="https://godmodeai2025.github.io/MarkZimmermann/">Impressum</a></footer>
 </main></body></html>"""
 
 
